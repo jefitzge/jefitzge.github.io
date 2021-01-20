@@ -1,0 +1,30 @@
+.flex-footer {
+	display: flex;
+	flex-direction: row;
+	font-size: 20px;
+	text-align: center;
+}
+
+.flex-left {
+	background-color: red;
+	padding: 10px;
+	flex: 25%;
+}
+
+.flex-mid {
+	background-color: blue;
+	padding: 10px;
+	flex: 50%;
+}
+
+.flex-right {
+	background-color: green;
+	padding: 10px;
+	flex: 25%;
+}
+
+@media (max-width: 800px){
+	.flex-footer{
+		flex-direction: column;
+	}
+}
