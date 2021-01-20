@@ -2,6 +2,7 @@
 This website will become a portfolio of all my works as well as a way for me to expand my coding skills. There will be several challenges along the way. 
 
 ## **Short Term Goals**
+- [x] Remove navigation bar animation
 - [ ] Complete Home Page
 - [ ] Complete About Page
 - [ ] Complete Projects Page
