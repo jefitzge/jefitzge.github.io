@@ -9,13 +9,6 @@ body {
 	flex-direction: column;
 }
 
-footer {
-	background: #161616;
-	color: white;
-	line-height: 50px;
-	padding: 0 20px;
-}
-
 /*IDEA CHANGE THE HEIGHT TO BE SMALLER AND MAKE THIS PART WHERE THE TITLE GOES, MAYBE USE THE GLITCH EFFECT*/
 .top-container {
 	background: #24305E;
