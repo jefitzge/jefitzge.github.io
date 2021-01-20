@@ -30,11 +30,12 @@ footer {
 .sticky{
 	position: fixed;
 	top: 0;
-	width: 100%;
+	left: 0;
+	right: 0;	
 }
 
 .sticky + .content {
-	padding-top: 100px;
+	padding-top: 60px;
 }
 
 .content {

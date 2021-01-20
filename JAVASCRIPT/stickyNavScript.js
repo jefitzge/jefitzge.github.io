@@ -1,11 +1,12 @@
-window.onscroll = function() {stickyNavBar()}; 
-var navBar = document.getElementById("mynavBar")
-var sticky = navBar.offsetTop;
+const nav = document.querySelector('#mynavBar')
+const firstScreen = document.querySelector('.top-container')
 
-function stickyNavBar(){
-	if(window.pageYOffset > sticky){
-		navBar.classList.add("sticky");
-	} else{
-		navBar.classList.remove("sticky");
-	}
-}
+document.addEventListener('scroll', function(e) {
+  let scrollCount = self.pageYOffset || (document.documentElement && document.documentElement.scrollTop) || (document.body && document.body.scrollTop)
+  
+  if (scrollCount > firstScreen.clientHeight) {
+    nav.classList.add('sticky')
+  } else {
+    nav.classList.remove('sticky')    
+  }
+})
