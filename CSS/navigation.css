@@ -29,11 +29,11 @@ nav a {
 	/*border: 2px solid #3AAFA9;*/ /*for debug purposes*/
 }
 
-nav .active{
+/*nav .active{
 	background-color: #13c6e4; 
 	border-radius: 20px;
 	color: black;
-}
+}*/
 
 /*nav .animation {
 	position: absolute;
