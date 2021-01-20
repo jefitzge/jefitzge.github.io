@@ -1,0 +1,106 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+  	font: 16px Sans-Serif;
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	background: #161616;
+	color: white;
+	line-height: 50px;
+	padding: 0 20px;
+}
+
+/*IDEA CHANGE THE HEIGHT TO BE SMALLER AND MAKE THIS PART WHERE THE TITLE GOES, MAYBE USE THE GLITCH EFFECT*/
+.top-container {
+	background: #24305E;
+	background: url("../Photos/5.jpg") no-repeat center;
+	text-align: center;
+	min-height: 100%;
+}
+
+.top-container > p {
+	color: white;
+}
+
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.sticky + .content {
+	padding-top: 100px;
+}
+
+.content {
+	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+	padding: 20px;
+	background-color: white;
+}
+
+/*START STYLING FOR CONTACT PAGE*/
+*{
+	box-sizing: border-box;
+}
+/*Style inputs*/
+input[type=text], select, textarea{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit]{
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+input[type=submit]:hover{
+	background-color: #45a049;
+}
+
+/*Style the container/contact section*/
+.container{
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 10px;
+}
+
+/*Create two columns that float next to eachother*/
+.column{
+	float: left;
+	width: 50%;
+	margin-top: 6px;
+	padding: 20px;
+}
+
+/*Clear floats after the columns*/
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+@media screen and (max-width: 600px){
+	.column, input[type=submit]{
+		width: 100%;
+		margin-top: 0;
+	}
+}
+/*END STYLING FOR CONTACT PAGE*/
+
+.footer {
+	flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+	padding: 20px;
+}
