@@ -7,7 +7,7 @@ have it collapse down and make it a drop down list
 SOURCE: https://codepen.io/Patak/pen/QpLpOV/?editors=1100
 Used for the navigation bar with minor tweaks in shape and color scheme*/
 nav {
-	display: flex; /*Experimentation*/
+	display: flex; 
 	margin: 0 0 auto;
 	position: relative;
 	width: auto;
@@ -27,7 +27,7 @@ nav a {
 	text-align: center;
 	color: white;
 	cursor: pointer;
-	/*border: 2px solid #3AAFA9;*/ /*for debug purposes*/
+	border: 2px solid #3AAFA9; /*for debug purposes*/
 }
 
 nav .active{
