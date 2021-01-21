@@ -24,11 +24,17 @@
 }
 
 .flex-icons{
-	padding: 10px;
+	padding: 2px;
 }
 
 .flex-icons a{
 	color: white;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.flex-icons a:hover{
+	color: #13c6e4;
 }
 
 @media (max-width: 800px){
