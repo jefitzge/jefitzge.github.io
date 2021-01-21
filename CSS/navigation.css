@@ -16,7 +16,6 @@ nav {
 	think it adds onto the padding from other elements, more testing to 
 	prove that theory KEEP SOME PADDING TO SEE UNDER STROKE ANIMATION*/
 	padding: 2px 0; 
-	border-radius: 20px;
 }
 
 nav ul {
@@ -30,7 +29,7 @@ nav ul li {
 
 nav ul li a {
 	display: block; /*INVESTIGATE THIS MORE*/
-	padding: 10px; /*This is the padding around all these elements*/
+	padding: 4px; /*This is the padding around all these elements*/
 	text-decoration: none;
 	color: white; /*Changes button text color*/
 	font-weight: 900;
