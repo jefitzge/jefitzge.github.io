@@ -23,6 +23,14 @@
 	flex: 25%;
 }
 
+.flex-icons{
+	padding: 10px;
+}
+
+.flex-icons a{
+	color: white;
+}
+
 @media (max-width: 800px){
 	.flex-footer{
 		flex-direction: column;
