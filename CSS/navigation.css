@@ -4,9 +4,12 @@ have it collapse down and make it a drop down list
 /* NAVIGATION */
 
 nav {
+	/*Make the navigation bar take up the whole width of the screen*/
 	width: 100%;
 	margin: 0 auto;
-	background: #0B0C10;
+	/*This makes the whole nav bar black*/
+	background: #0B0C10; 
+	/*This adds padding to the top of the navigation bar of 20px*/
 	padding: 20px 0;
 }
 
@@ -54,7 +57,7 @@ nav.fill ul li a:after {
 	margin: auto;
 	width: 0%;
 	content: '.';
-	color: transparent;
+	color: white; /*This color change is for experimentation purposes*//*transparent;*/
 	background: #aaa;
 	height: 1px;
 }
