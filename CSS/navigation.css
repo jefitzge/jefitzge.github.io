@@ -36,9 +36,8 @@ nav ul li a:before {
 }
 
 nav ul li a:hover {
-	color: #555;
+	color: white;
 }
-
 
 /* stroke */
 nav.stroke ul li a,
