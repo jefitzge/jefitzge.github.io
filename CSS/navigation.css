@@ -45,7 +45,7 @@ nav ul li a:before {
 }
 
 nav ul li a:hover {
-	color: #555; /*not sure what color this changes, might be the underline*/
+	color: #555; /*This changes the color of the text when you hover over a button*/
 }
 
 nav ul li a.active{
