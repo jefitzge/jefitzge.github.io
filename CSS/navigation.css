@@ -18,6 +18,11 @@ nav {
 	padding: 2px 0; 
 }
 
+nav img {
+	color:white;
+	display: inline-block;
+}
+
 nav ul {
 	list-style: none;
 	text-align: left;
