@@ -3,6 +3,7 @@
 	flex-direction: row;
 	font-size: 20px;
 	text-align: center;
+	border-top: 2px solid #ce1c69;
 }
 
 .flex-left {

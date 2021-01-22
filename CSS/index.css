@@ -36,12 +36,13 @@ body {
 .content {
 	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
 	padding: 20px;
-	background-color: white;
+	background-color: black;
 }
 
 .testArticle {
-	background-color: #252B37;
-	box-shadow: 0 4px 8px 0 #13c6e4;
+	color: white;
+	background-color: black;
+	box-shadow: 0px 0px 8px 8px #13c6e4;
     -webkit-columns: 2 200px;
        -moz-columns: 2 200px;
             columns: 2 200px;
