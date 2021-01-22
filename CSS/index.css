@@ -36,7 +36,7 @@ body {
 .content {
 	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
 	padding: 20px;
-	background-color: white;
+	background-color: #252B37;
 }
 
 .testArticle {
