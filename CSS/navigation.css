@@ -16,6 +16,8 @@ nav {
 	think it adds onto the padding from other elements, more testing to 
 	prove that theory KEEP SOME PADDING TO SEE UNDER STROKE ANIMATION*/
 	padding: 2px 0; 
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
 
 nav img.logo-img {
