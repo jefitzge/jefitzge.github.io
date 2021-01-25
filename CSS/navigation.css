@@ -19,7 +19,7 @@ nav {
 	border-bottom: 2px solid #ce1c69;
 }
 
-nav img.logo-img {
+nav a.logo {
 	color:white;
 	display: inline-block;
 }
@@ -43,9 +43,7 @@ nav ul li a {
 	margin: 0 10px;
 }
 
-nav ul li a, 
-nav ul li a:after,
-nav ul li a:before {
+nav ul li a, nav ul li a:after, nav ul li a:before {
 	transition: all .5s;
 }
 
@@ -59,10 +57,10 @@ nav ul li a.active{
 }
 
 /* stroke */
-nav.stroke ul li a,
-nav.fill ul li a {
+nav.stroke ul li a, nav.fill ul li a {
 	position: relative;
 }
+
 nav.stroke ul li a:after, nav.fill ul li a:after {
 	position: absolute;
 	bottom: 0;
