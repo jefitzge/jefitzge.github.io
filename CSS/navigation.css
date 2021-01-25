@@ -73,23 +73,23 @@ nav.stroke ul li a:hover:after {
 	width: 100%;
 }
 
-nav.fill ul li a {
+nav.fill-navbar ul li a {
 	transition: all 2s;
 }
 
-nav.fill ul li a:after {
+nav.fill-navbar ul li a:after {
 	text-align: left;
 	content: '.';
 	margin: 0;
 	opacity: 0;
 }
 
-nav.fill ul li a:hover {
+nav.fill-navbar ul li a:hover {
 	color: black; /*changes button text color on hover and fill*/
 	z-index: 1;
 }
 
-nav.fill ul li a:hover:after {
+nav.fill-navbar ul li a:hover:after {
 	z-index: -10; /*Sets the fill animation to the background not the foreground*/
 	animation: fill 1s forwards;
 	-webkit-animation: fill 1s forwards;
