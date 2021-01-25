@@ -4,161 +4,152 @@ have it collapse down and make it a drop down list
 
 /*SOURCE:https://codepen.io/maheshambure21/pen/QwXaRw
 -Modifications made to color and shape*/
-* {
-	box-sizing: border-box;
-	padding: 0;
-    margin: 0;
+
+/* NAVIGATION */
+nav {
+	width: 100%;
+	margin: 0 auto;
+	/*Navigation color*/
+	background: #040404; 
+	/*Padding around navigation bar, if you have 0 padding the button 
+	is the same size as the nav element we could add some padding and i 
+	think it adds onto the padding from other elements, more testing to 
+	prove that theory KEEP SOME PADDING TO SEE UNDER STROKE ANIMATION*/
+	padding: 2px 0; 
+	border-bottom: 2px solid #ce1c69;
 }
 
-body {
-    font-family: 'Josefin Sans', sans-serif;
+nav ul {
+	list-style: none;
+	text-align: left;
 }
 
-.navbar {
-    font-size: 18px;
-    background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding-bottom: 10px;
+nav ul li {
+	display: inline-block; /*Changes how the buttons are stacked*/
 }
 
-.main-nav {
-    list-style-type: none;
-    display: none;
+nav ul li a {
+	display: block; /*INVESTIGATE THIS MORE*/
+	padding: 4px; /*This is the padding around all these elements*/
+	text-decoration: none;
+	color: white; /*Changes button text color*/
+	font-weight: 900;
+	text-transform: uppercase;
+	margin: 0 10px;
 }
 
-.main-nav li {
-    text-align: center;
-    margin: 15px auto;
+nav ul li a, nav ul li a:after, nav ul li a:before {
+	transition: all .5s;
 }
 
-.logo {
-    display: inline-block;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px;
+nav ul li a:hover {
+	color: #555; /*This changes the color of the text when you hover over a button*/
 }
 
-.navbar-toggle {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 24px;
+nav ul li a.active{
+	background: #ce1c69;
+	border-radius: 20px;
 }
 
-.active {
-    display: block;
+/* stroke */
+nav.stroke ul li a, nav.fill ul li a {
+	position: relative;
 }
 
-@media screen and (max-width: 768px){
-	/* NAVIGATION */
-	nav {
+nav.stroke ul li a:after, nav.fill ul li a:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.'; /*I think all the lines below stlye the dot for the animation*/
+	color: transparent; /*not sure what this changes*/ 
+	background: #13c6e4; /*The little line that goes under the text first is this color before the button fills up*/
+	height: 1px; /*not sure what this changes*/
+}
+
+nav.stroke ul li a:hover:after {
+	width: 100%;
+}
+
+nav.fill-navbar ul li a {
+	transition: all 2s;
+}
+
+nav.fill-navbar ul li a:after {
+	text-align: left;
+	content: '.';
+	margin: 0;
+	opacity: 0;
+}
+
+nav.fill-navbar ul li a:hover {
+	color: black; /*changes button text color on hover and fill*/
+	z-index: 1;
+}
+
+nav.fill-navbar ul li a:hover:after {
+	z-index: -10; /*Sets the fill animation to the background not the foreground*/
+	animation: fill 1s forwards;
+	-webkit-animation: fill 1s forwards;
+	-moz-animation: fill 1s forwards;
+	opacity: 1;
+}
+
+/* Keyframes */
+@-webkit-keyframes fill {
+	0% {
+		width: 0%;
+		height: 1px; /*THIS CHANGES THE HEIGHT OF THE STROKE AT THE BEGINNING OF THE ANIMATION */
+	}
+	50% {
 		width: 100%;
-		margin: 0 auto;
-		/*Navigation color*/
-		background: #040404; 
-		/*Padding around navigation bar, if you have 0 padding the button 
-		is the same size as the nav element we could add some padding and i 
-		think it adds onto the padding from other elements, more testing to 
-		prove that theory KEEP SOME PADDING TO SEE UNDER STROKE ANIMATION*/
-		padding: 2px 0; 
-		border-bottom: 2px solid #ce1c69;
+		height: 1px; /*THIS CHANGES THE HEIGHT OF THE STROKE MID WAY THROUGH*/
 	}
-
-	nav ul {
-		list-style: none;
-		text-align: left;
-	}
-
-	nav ul li {
-		display: inline-block; /*Changes how the buttons are stacked*/
-	}
-
-	nav ul li a {
-		display: block; /*INVESTIGATE THIS MORE*/
-		padding: 4px; /*This is the padding around all these elements*/
-		text-decoration: none;
-		color: white; /*Changes button text color*/
-		font-weight: 900;
-		text-transform: uppercase;
-		margin: 0 10px;
-	}
-
-	nav ul li a, nav ul li a:after, nav ul li a:before {
-		transition: all .5s;
-	}
-
-	nav ul li a:hover {
-		color: #555; /*This changes the color of the text when you hover over a button*/
-	}
-
-	nav ul li a.active{
-		background: #ce1c69;
+	100% {
+		width: 100%;
+		height: 100%;
+		background: #13c6e4; /*Changes fill color*/
 		border-radius: 20px;
 	}
+}
 
-	/* stroke */
-	nav.stroke ul li a, nav.fill ul li a {
-		position: relative;
+
+@media only screen and (max-width: 600px) {
+	.fill-navbar {
+	    font-size: 18px;
+	    background-color:  #040404; 
+	    padding-bottom: 10px;
 	}
 
-	nav.stroke ul li a:after, nav.fill ul li a:after {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		margin: auto;
-		width: 0%;
-		content: '.'; /*I think all the lines below stlye the dot for the animation*/
-		color: transparent; /*not sure what this changes*/ 
-		background: #13c6e4; /*The little line that goes under the text first is this color before the button fills up*/
-		height: 1px; /*not sure what this changes*/
+	.main-nav {
+	    list-style-type: none;
+	    display: none;
 	}
 
-	nav.stroke ul li a:hover:after {
-		width: 100%;
+	.main-nav li {
+	    text-align: center;
+	    margin: 15px auto;
 	}
 
-	nav.fill-navbar ul li a {
-		transition: all 2s;
+	.logo {
+	    display: inline-block;
+	    font-size: 22px;
+	    margin-top: 10px;
+	    margin-left: 20px;
 	}
 
-	nav.fill-navbar ul li a:after {
-		text-align: left;
-		content: '.';
-		margin: 0;
-		opacity: 0;
+	.navbar-toggle {
+	    position: absolute;
+	    top: 10px;
+	    right: 20px;
+	    cursor: pointer;
+	    color: rgba(255, 255, 255, 0.8);
+	    font-size: 24px;
 	}
 
-	nav.fill-navbar ul li a:hover {
-		color: black; /*changes button text color on hover and fill*/
-		z-index: 1;
-	}
-
-	nav.fill-navbar ul li a:hover:after {
-		z-index: -10; /*Sets the fill animation to the background not the foreground*/
-		animation: fill 1s forwards;
-		-webkit-animation: fill 1s forwards;
-		-moz-animation: fill 1s forwards;
-		opacity: 1;
-	}
-
-	/* Keyframes */
-	@-webkit-keyframes fill {
-		0% {
-			width: 0%;
-			height: 1px; /*THIS CHANGES THE HEIGHT OF THE STROKE AT THE BEGINNING OF THE ANIMATION */
-		}
-		50% {
-			width: 100%;
-			height: 1px; /*THIS CHANGES THE HEIGHT OF THE STROKE MID WAY THROUGH*/
-		}
-		100% {
-			width: 100%;
-			height: 100%;
-			background: #13c6e4; /*Changes fill color*/
-			border-radius: 20px;
-		}
+	.active {
+	    display: block;
 	}
 }
