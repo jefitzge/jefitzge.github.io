@@ -52,11 +52,11 @@ nav ul li a.active{
 }
 
 /* stroke */
-nav.stroke ul li a, nav.fill ul li a {
+nav.stroke ul li a, nav.fill-navbar ul li a {
 	position: relative;
 }
 
-nav.stroke ul li a:after, nav.fill ul li a:after {
+nav.stroke ul li a:after, nav.fill-navbar ul li a:after {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -119,7 +119,7 @@ nav.fill-navbar ul li a:hover:after {
 @media only screen and (max-width: 600px) {
 	.fill-navbar {
 	    font-size: 18px;
-	    background-color:  #040404; 
+	    background-color: #040404; 
 	    padding-bottom: 10px;
 	}
 
