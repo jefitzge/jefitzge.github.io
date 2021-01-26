@@ -122,6 +122,11 @@ nav.fill-navbar ul li a:hover:after {
 	background-color: white;
 }
 
+/*Hide the toggle bar while the screen is larger than 800px*/
+.toggle-navbar{
+	display: none;
+}
+
 
 @media only screen and (max-width: 800px) {
 	.fill-navbar {
