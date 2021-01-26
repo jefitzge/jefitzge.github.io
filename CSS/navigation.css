@@ -8,6 +8,7 @@ have it collapse down and make it a drop down list
 /* NAVIGATION */
 nav {
 	width: 100%;
+	/*Add a fixed height that is changed when the window is resized*/
 	margin: 0 auto;
 	/*Navigation color*/
 	background: #040404; 
@@ -114,6 +115,12 @@ nav.fill-navbar ul li a:hover:after {
 		background: #13c6e4; /*Changes fill color*/
 		border-radius: 20px;
 	}
+}
+
+.logo{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
 }
 
 
