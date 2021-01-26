@@ -121,6 +121,7 @@ nav.fill-navbar ul li a:hover:after {
 	display: inline-block;
 	height: 20px;
 	width: 20px;
+	background-color: white;
 }
 
 
@@ -146,6 +147,7 @@ nav.fill-navbar ul li a:hover:after {
 	    font-size: 22px;
 	    margin-top: 10px;
 	    margin-left: 20px;
+	    background-color: white;
 	}
 
 	.navbar-toggle {
