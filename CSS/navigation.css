@@ -121,7 +121,6 @@ nav.fill-navbar ul li a:hover:after {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	/*justify-content: ;*/
 }
 
 .logo{
@@ -167,11 +166,14 @@ nav.fill-navbar ul li a:hover:after {
 	    color: rgba(255, 255, 255, 0.8);
 	    font-size: 24px;
 	}
-	/*I dont understand how the chain of calls works here, why is it js-menu... etc. More research is needed 
-	for this but for now it seems to work*/
+
 	/*This displays menu on mobile as a column*/
-	ul#js-menu.main-nav.active{
+	/*ul#js-menu.main-nav.active{
 		display: flex;
 		flex-direction: column;
+	}*/
+	.nav-test-flex{
+		flex-direction: column;
+		align-items: center;
 	}
 }
