@@ -22,11 +22,10 @@ body {
 
 .sticky{
 	position: fixed;
-	width: 100%;
 	top: 0;
+	/*width: 100%;*/
 	left: 0;
-	z-index: 100;
-	border-top: 0;
+	right: 0;
 }
 
 .sticky + .content {
