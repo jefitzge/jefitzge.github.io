@@ -117,8 +117,14 @@ nav.fill-navbar ul li a:hover:after {
 	}
 }
 
+.nav-test-flex{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/*justify-content: ;*/
+}
+
 .logo{
-	display: inline-block;
 	background-color: white;
 }
 
