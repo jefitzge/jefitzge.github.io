@@ -23,20 +23,42 @@
 			<p>By Joseph Fitzgerald</p>
 		</div>
 
-		<nav class="fill-navbar" id="mynavBar">
-			<span class="navbar-toggle" id="js-navbar-toggle">
-				<i class="fa fa-bars"></i>
-			</span>
-			<ul class="main-nav" id="js-menu">
-				<li><a class="active" href="index.html">Home</a></li>
-      			<li><a href="About.html">About</a></li>
-      			<li><a href="Projects.html">Projects</a></li>
-			    <li><a href="Resume.html">Resume</a></li>
-			    <li><a href="Contact.html">Contact</a></li>
- 			</ul>
-  		</nav>
+	    <!-- START nav-container -->    
+	    <div class="nav-container">
+	      <!-- START LOGO -->
+	      <div class="logo-container">
+	        <img src="../Photos/test_logo.png" alt="Logo">
+	      </div>
+	      <!-- END LOGO -->
+	      <div class="menu-container" id="menu">
+	        <nav>
+	          <ul>
+	            <li><a class="active" href="index.html">Home</a></li>
+	            <div class="dropdown">
+	              <li><a onclick="menu_dropdown()" class="dropbtn" href="#">Projects <i class="fa fa-caret-down"></i></a>
+	                <div class="dropdown-content" id="myDropdown">
+	                  <ul>
+	                    <li><a href="#">Project One</a></li>
+	                    <li><a href="#">Project Two</a></li>
+	                    <li><a href="#">Project Three</a></li>
+	                  </ul>
+	                </div>
+	              </li>
+	            </div> 
+	            <li><a href="Resume.html">Resume</a></li>
+	          </ul>
+	        </nav>
+	      </div>
+	      <!-- START TOGGLE -->
+	      <div class="toggle-container">
+	        <a href="javascript:void(0);" onclick="toggle_menu()" class="fa fa-bars fa-2x"></a>
+	      </div>
+	      <!-- END TOGGLE -->
+	    </div>
+	    <!-- END Nav-container -->
 
-		<!-- <div class="content">
+
+		<div class="content">
 			<p>Content</p>
 			<article class="testArticle">
 				<p>At noon they sat down by the roadside, near a little brook, and Dorothy opened her basket and got out some bread.  She offered a piece to the Scarecrow, but he refused.</p>
@@ -66,7 +88,7 @@
 
 				<h3>This is a test of sublime and git intergration</h3>
 			</article>
-		</div> -->
+		</div>
 
 		<footer class="flex-footer">
 			<div class="flex-left">Created by Joseph Fitzgerald</div>
@@ -81,8 +103,7 @@
 			<div class="flex-right"><small>&copy; Copyright 2021. All Rights Reserved</small></div>
 		</footer>
 
-		<script type="text/javascript" src="JAVASCRIPT/stickyNavScript.js"></script>
-		<script type="text/javascript" src="JAVASCRIPT/navbartoggle.js"></script>
+		<script type="text/javascript" src="JAVASCRIPT/menu_toggle.js"></script>
 
 	</body>
 </html>

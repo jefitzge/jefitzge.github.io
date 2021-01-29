@@ -1,151 +1,176 @@
-/*This controls the Navigation Bar for the website
--Needs to be more mobile friendly when resizing the browser, 
-have it collapse down and make it a drop down list
+/*MAY NEED TO REMOVE ELEMENTS WITHIN MENU-CONTAINER WHEN DEVELOPING MOBILE DROP DOWN VERSION TO HELP SIMPLIFY STYLING
+NOTE: For now menu-conatiner has NO styling*/
 
-/*SOURCE:https://codepen.io/maheshambure21/pen/QwXaRw
--Modifications made to color and shape*/
-
-/* NAVIGATION */
-nav {
+/*This DIV wraps the logo the menu and the toggle button*/
+div.nav-container{
+	/*Controls the color of the navigation menu background color(MATCH WITH <ul> COLOR)*/
+	background: #040404;
 	width: 100%;
-	/*Add a fixed height that is changed when the window is resized*/
-	margin: 0 auto;
-	/*Navigation color*/
-	background: #040404; 
-	/*Padding around navigation bar, if you have 0 padding the button 
-	is the same size as the nav element we could add some padding and i 
-	think it adds onto the padding from other elements, more testing to 
-	prove that theory KEEP SOME PADDING TO SEE UNDER STROKE ANIMATION*/
-	padding: 2px 0; 
-	border-bottom: 2px solid #ce1c69;
-	position: relative;
+	/*margin pushes the navigation away from the screen borders and we dont want that so we set it to 0*/
+	margin: 0;
+	/*padding pushes the logo and menu in, might need this but for now keep at 0*/
+	padding: 0;
+	/*This makes it a flex container and its direct children flex items*/
+	display: flex;
+	/*This makes the first and last flex items be pushed to the start and end of the flex conatiner
+	with space in between them*/
+	justify-content: space-between;
+	/*This is to align all the flex items along the cross/x axis*/
+	align-items: center;
 }
 
-nav ul {
-	list-style: none;
-	text-align: left;
+/*This DIV wraps the logo image, it manipulates the container not the image itself*/
+div.logo-container{
+	background: white;
+	margin: 0;
+	width: 50px;
 }
 
-nav ul li {
-	display: inline-block; /*Changes how the buttons are stacked*/
+/*This controls the height and width of the image in the .logo-container div*/
+div.logo-container > img{
+	width: 50px;
+	height: 50px;
+}
+div.menu-container{
+	display: flex;
 }
 
-nav ul li a {
-	display: block; /*INVESTIGATE THIS MORE*/
-	padding: 4px; /*This is the padding around all these elements*/
+/*NOTE: We only want this to appear when the browser is resized so it should be hidden at all other times.
+NOTE: This will also be used to push the navigation menu towards the center of the page until
+a better solution can be found, eventually want the logo and menu containers to sit next to each other, maybe...*/
+
+/*This conatiner holds the toggle-menu button that will be used on mobile*/
+div.toggle-container{
+	background: white;
+	margin: 0px 20px;
+	padding: 4px;
+	list-style-type: none;
+	/*the element will still take up the same space as before. The element will be hidden, but still affect the layout*/
+	visibility: hidden;
+}
+
+/*This is the navigation menu*/
+nav > ul{
+	/*Removes bullet points from links*/
 	text-decoration: none;
-	color: white; /*Changes button text color*/
-	font-weight: 900;
+	/*These two lines remove space around the links for better styling*/
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	/*Match this color with the navigation container color*/
+	background: #040404;
+	/*This flex item is a flex container, remember its contained by nav-container which is a flex container*/
+	display: flex;
+}
+
+nav > ul > li{
+	display: inline-block;
+}
+
+/*<--------------START Main navigation Link/Button styling (not sub menu)-------------->*/
+nav > ul > li > a, 
+.dropdown .dropbtn,
+.dropdown-content a{
+	/*Displaying the links as block elements makes the 
+	whole link area clickable (not just the text), and 
+	it allows us to specify the width (and padding, margin, height, etc)*/
+	display: inline-block; 
+	width: 90px;
+	height: 20px;
+	/*Sets the space between links/button*/
+	margin: 10px;
+	padding: 10px;
+	/*Sets the background color of the link/button*/
+	background: white;																			/*<----------------Maybe pick a different white*/
+	/*Sets the color of the text of the link/button*/
+	color: black;
+	/*Removes underline from links/buttons*/
+	text-decoration: none;
+	/*Centers text on link/button*/
+	text-align: center;
+	/*link/button text is made all uppercase*/
 	text-transform: uppercase;
-	margin: 0 10px;
-}
-
-nav ul li a, nav ul li a:after, nav ul li a:before {
-	transition: all .5s;
-}
-
-nav ul li a:hover {
-	color: #555; /*This changes the color of the text when you hover over a button*/
-}
-
-nav ul li a.active{
-	background: #ce1c69;
+	/*makes font thicker*/
+	font-weight: 900;
+	/*sets font size*/
+	font-size: 14px;
 	border-radius: 20px;
 }
 
-/* stroke */
-nav.stroke ul li a, nav.fill-navbar ul li a {
-	position: relative;
+/*Change the link color and text color on hover, 
+Change the dropdown link color and text color on hover*/
+a:hover,
+.dropdown .dropbtn:hover{
+	background: #13c6e4;
+	color: black;
 }
 
-nav.stroke ul li a:after, nav.fill-navbar ul li a:after {
+/*Change the link, of the current page, color on hover*/
+a:hover.active,
+.dropdown .dropbtn:hover.active{
+	background: #13c6e4;
+	color: black;
+}
+
+/*The link/button of the current page has its background and text color changed*/
+a.active{
+	background: #ce1c69;													/*<----------neon red but make less bright or differnet color completely different*/
+	color: black;
+}
+
+/*These two are needed because I made a mistake when naming the classes and I need to rewrite this part <----------------COME BACK TO THIS*/
+#active-page{
+		background: #ce1c69;
+		color: black;
+}
+#active-page:hover{
+		background: #13c6e4;
+		color: black;
+}
+/*<--------------END Main navigation Link/Button styling-------------->*/
+
+/*<--------------Start drowpdown styling-------------->*/
+/*NOTE: Some dropdown styling is included in Main-navigation styling to reduce code*/
+.dropdown{
+  float: left;
+  overflow: hidden;
+}
+
+/*This styles the container of the dropdown box*/
+.dropdown-content{
+	/*if this is not set the sub-menu will be open and cannot be closed*/
+	display: none;
 	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	width: 0%;
-	content: '.'; /*I think all the lines below stlye the dot for the animation*/
-	color: transparent; /*not sure what this changes*/ 
-	background: #13c6e4; /*The little line that goes under the text first is this color before the button fills up*/
-	height: 1px; /*not sure what this changes*/
-}
-
-nav.stroke ul li a:hover:after {
-	width: 100%;
-}
-
-nav.fill-navbar ul li a {
-	transition: all 2s;
-}
-
-nav.fill-navbar ul li a:after {
-	text-align: left;
-	content: '.';
-	margin: 0;
-	opacity: 0;
-}
-
-nav.fill-navbar ul li a:hover {
-	color: black; /*changes button text color on hover and fill*/
+	/*changes the color of the background for the container that holds the sub-menu links/buttons*/
+	background: #040404;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 }
 
-nav.fill-navbar ul li a:hover:after {
-	z-index: -10; /*Sets the fill animation to the background not the foreground*/
-	animation: fill 1s forwards;
-	-webkit-animation: fill 1s forwards;
-	-moz-animation: fill 1s forwards;
-	opacity: 1;
+.dropdown-content > ul{
+	/*Removes bullet points from links*/
+	list-style-type: none;
+	/*These two lines remove space around the links for better styling*/
+	margin: 0;
+	padding: 0;
 }
 
-/* Keyframes */
-@-webkit-keyframes fill {
-	0% {
-		width: 0%;
-		height: 1px; /*THIS CHANGES THE HEIGHT OF THE STROKE AT THE BEGINNING OF THE ANIMATION */
-	}
-	50% {
-		width: 100%;
-		height: 1px; /*THIS CHANGES THE HEIGHT OF THE STROKE MID WAY THROUGH*/
-	}
-	100% {
-		width: 100%;
-		height: 100%;
-		background: #13c6e4; /*Changes fill color*/
-		border-radius: 20px;
-	}
+/*Styles the hover on the sub-menu links/buttons*/
+.dropdown-content a:hover{
+	background-color: #13c6e4;
+	color: black;
 }
 
-/*Hide the toggle bar while the screen is larger than 800px*/
-.toggle-navbar{
-	display: none;
+.show {
+	display: block;
 }
+/*<--------------END dropdown styling-------------->*/
 
-
-@media only screen and (max-width: 800px) {
-	.fill-navbar {
-	    font-size: 18px;
-	    background-color: #040404; 
-	    padding-bottom: 10px;
-	}
-
-	.main-nav {
-	    list-style-type: none;
-	    display: none;
-	}
-
-	.main-nav li {
-	    text-align: center;
-	    margin: 10px auto;
-	}
-
-	.navbar-toggle {
-	    position: absolute;
-	    top: 10px;
-	    right: 20px;
-	    cursor: pointer;
-	    color: rgba(255, 255, 255, 0.8);
-	    font-size: 24px;
+@media screen and (max-width: 900px){
+	div.toggle-container{
+		/*Make the toggle button visbile when mobile navigation menu is added*/
+		visibility: hidden;
 	}
 }

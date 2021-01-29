@@ -12,18 +12,39 @@
 	</head>
 
 	<body>
-		<nav class="fill-navbar" id="mynavBar">
-			<span class="navbar-toggle" id="js-navbar-toggle">
-				<i class="fa fa-bars"></i>
-			</span>
-			<ul class="main-nav" id="js-menu">
-				<li><a href="index.html">Home</a></li>
-      			<li><a href="About.html">About</a></li>
-      			<li><a href="Projects.html">Projects</a></li>
-			    <li><a class="active" href="Resume.html">Resume</a></li>
-			    <li><a href="Contact.html">Contact</a></li>
- 			</ul>
-  		</nav>
+		<!-- START nav-container -->    
+	    <div class="nav-container">
+	      <!-- START LOGO -->
+	      <div class="logo-container">
+	        <img src="../Photos/test_logo.png" alt="Logo">
+	      </div>
+	      <!-- END LOGO -->
+	      <div class="menu-container" id="menu">
+	        <nav>
+	          <ul>
+	            <li><a href="index.html">Home</a></li>
+	            <div class="dropdown">
+	              <li><a onclick="menu_dropdown()" class="dropbtn" href="#">Projects <i class="fa fa-caret-down"></i></a>
+	                <div class="dropdown-content" id="myDropdown">
+	                  <ul>
+	                    <li><a href="#">Project One</a></li>
+	                    <li><a href="#">Project Two</a></li>
+	                    <li><a href="#">Project Three</a></li>
+	                  </ul>
+	                </div>
+	              </li>
+	            </div> 
+	            <li><a class="active" href="Resume.html">Resume</a></li>
+	          </ul>
+	        </nav>
+	      </div>
+	      <!-- START TOGGLE -->
+	      <div class="toggle-container">
+	        <a href="javascript:void(0);" onclick="toggle_menu()" class="fa fa-bars fa-2x"></a>
+	      </div>
+	      <!-- END TOGGLE -->
+	    </div>
+	    <!-- END Nav-container -->
 
 		<div class="content">
 			<div class="flex-content">
@@ -54,8 +75,7 @@
 			<div class="flex-right"><small>&copy; Copyright 2021. All Rights Reserved</small></div>
 		</footer>
 
-		<script type="text/javascript" src="JAVASCRIPT/stickyNavScript.js"></script>
-		<script type="text/javascript" src="JAVASCRIPT/navbartoggle.js"></script>
+		<script type="text/javascript" src="JAVASCRIPT/menu_toggle.js"></script>
 
 	</body>
 </html>
