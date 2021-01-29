@@ -10,7 +10,7 @@ This website will become a portfolio of all my works as well as a way for me to 
 	- [ ] Add sample project
 - [ ] Complete Resume Page
 
-### **Completed Goals**
+## **Completed Goals**
 - [x] Remove old navigation bar animation
 - [x] Add new navigation bar animation
 - [X] Complete Footer
