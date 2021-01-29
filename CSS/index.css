@@ -1,10 +1,11 @@
 html, body {
 	height: 100%;
+	font-family: "Courier New", "Times New Roman";
 }
 
 body {
 	margin: 0;
-  	font: 16px Sans-Serif;
+	padding: 0;
 	display: flex;
 	flex-direction: column;
 }
