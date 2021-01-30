@@ -27,6 +27,7 @@ body{
 	background-color: white;
 }
 
+/*Styles the Picture card that holds the profile image, title and contact buttons*/
 .pic-card{
 	display: flex;
 	/*to align the elements in the card to be in a column*/
@@ -43,5 +44,10 @@ body{
 	 0 4px 4px rgba(0,0,0,0.12), 
 	 0 8px 8px rgba(0,0,0,0.12),
 	 0 16px 16px rgba(0,0,0,0.12);
+}
 
+.profile-image-container > img{
+	height: 100px;
+	width: 100px;
+	padding: 30px;
 }
