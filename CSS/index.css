@@ -1,44 +1,47 @@
-html, body {
+html, body{
 	height: 100%;
 	font-family: "Courier New", "Times New Roman";
 }
 
-body {
+body{
 	margin: 0;
 	padding: 0;
 	display: flex;
 	flex-direction: column;
 }
 
-.top-container {
+.top-container{
 	background: #24305E;
 	background: url("../Photos/5.jpg") no-repeat center;
 	text-align: center;
 	min-height: 100%;
 }
 
-.top-container > p {
+.top-container > p{
 	color: white;
 }
 
-.content {
+.content{
 	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
 	padding: 20px;
 	background-color: white;
 }
 
-.testArticle {
-	color: white;
-	background-color: black;
-	padding: 4px;
-	box-shadow: 0px 0px 8px 8px #13c6e4;
-    -webkit-columns: 2 200px;
-       -moz-columns: 2 200px;
-            columns: 2 200px;
-    -webkit-column-gap: 4em;
-       -moz-column-gap: 4em;
-            column-gap: 4em;
-    -webkit-column-rule: 1px dotted #ddd;
-       -moz-column-rule: 1px dotted #ddd;
-            column-rule: 1px dotted #ddd;
+.pic-card{
+	display: flex;
+	/*to align the elements in the card to be in a column*/
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f2f3f4;
+	/*soften the corners of the card*/
+	border-radius: 5px;
+	/* Create smoother box-shadows by layering multiple
+	 shadows with gradually increasing radius and offset
+	 SOURCE: https://tobiasahlin.com/blog/layered-smooth-box-shadows/ */
+	 box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+	 0 2px 2px rgba(0,0,0,0.12), 
+	 0 4px 4px rgba(0,0,0,0.12), 
+	 0 8px 8px rgba(0,0,0,0.12),
+	 0 16px 16px rgba(0,0,0,0.12);
+
 }
