@@ -30,9 +30,11 @@ body{
 /*Styles the Picture card that holds the profile image, title and contact buttons*/
 .pic-card{
 	display: flex;
+	width: 25%;
 	/*to align the elements in the card to be in a column*/
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	background-color: #f2f3f4;
 	/*soften the corners of the card*/
 	border-radius: 5px;
