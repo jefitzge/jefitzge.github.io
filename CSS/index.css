@@ -91,3 +91,9 @@ body{
 .about-me{
 	padding: 20px;
 }
+
+@media (max-width: 800px){
+	.flex-content{
+		flex-direction: column;
+	}
+}
