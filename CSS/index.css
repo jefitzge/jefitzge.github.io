@@ -23,13 +23,28 @@ body{
 
 .content{
 	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-	flex-direction: row;
 	padding: 20px;
 	background-color: white;
 }
 
+/*This ccontainer keeps the home page elements in line, on mobile set flex-direction to column for nice layout*/
+.flex-content{
+	display: flex;
+	flex-direction: row;
+	/*Allows flex items to stack*/
+	flex-wrap: wrap;
+	/*this puts a gap between flex-items and provides spacing*/
+	margin: 0;
+	padding: 20px;
+}
+
 /*Styles the Picture card that holds the profile image, title and contact buttons*/
 .pic-card{
+	/*Help push content away from screen edges*/
+	margin: 10px;
+	/*Stops profile picture from going outside the div*/
+	overflow: hidden;
+	/*To help align elements*/
 	display: flex;
 	width: 25%;
 	/*to align the elements in the card to be in a column*/
@@ -77,5 +92,4 @@ body{
 	 0 4px 4px rgba(0,0,0,0.12), 
 	 0 8px 8px rgba(0,0,0,0.12),
 	 0 16px 16px rgba(0,0,0,0.12);
-
 }
