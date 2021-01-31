@@ -46,7 +46,6 @@ body{
 	overflow: hidden;
 	/*To help align elements*/
 	display: flex;
-	width: 25%;
 	/*to align the elements in the card to be in a column*/
 	flex-direction: column;
 	justify-content: center;
@@ -76,7 +75,6 @@ body{
 
 .bio-card{
 	display: flex;
-	width: 75%;
 	/*to align the elements in the card to be in a column*/
 	flex-direction: column;
 	justify-content: center;
