@@ -30,6 +30,7 @@ body{
 .flex-content{
 	display: flex;
 	flex-direction: row;
+	background-color: #040404;
 	margin: 0;
 	padding: 20px;
 	font-size: 20px;
