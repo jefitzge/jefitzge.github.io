@@ -23,19 +23,18 @@ body{
 
 .content{
 	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-	padding: 20px;
 	background-color: white;
 }
 
-/*This ccontainer keeps the home page elements in line, on mobile set flex-direction to column for nice layout*/
+/*This ccontainer keeps the home page elements in line*/
 .flex-content{
 	display: flex;
 	flex-direction: row;
-	/*Allows flex items to stack*/
-	flex-wrap: wrap;
-	/*this puts a gap between flex-items and provides spacing*/
 	margin: 0;
 	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	gap: 20px;
 }
 
 /*Styles the Picture card that holds the profile image, title and contact buttons*/
@@ -66,10 +65,10 @@ body{
 .profile-image-container > img{
 	height: 360px;
 	width: 540px;
-	padding: 30px;
+	padding: 20px;
 }
 
-.contact-buttons{
+.contact-buttons a{
 
 }
 
@@ -82,12 +81,13 @@ body{
 	background-color: #f2f3f4;
 	/*soften the corners of the card*/
 	border-radius: 5px;
-	/* Create smoother box-shadows by layering multiple
-	 shadows with gradually increasing radius and offset
-	 SOURCE: https://tobiasahlin.com/blog/layered-smooth-box-shadows/ */
 	 box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
 	 0 2px 2px rgba(0,0,0,0.12), 
 	 0 4px 4px rgba(0,0,0,0.12), 
 	 0 8px 8px rgba(0,0,0,0.12),
 	 0 16px 16px rgba(0,0,0,0.12);
+}
+
+.about-me{
+	padding: 20px;
 }
