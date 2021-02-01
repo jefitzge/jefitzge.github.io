@@ -21,7 +21,7 @@ div.nav-container{
 
 /*This DIV wraps the logo image, it manipulates the container not the image itself*/
 div.logo-container{
-	background: #040404;
+	background: white;
 	margin: 0;
 	width: 50px;
 }

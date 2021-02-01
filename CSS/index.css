@@ -1,6 +1,7 @@
 html, body{
 	height: 100%;
 	font-family: "Courier New", "Times New Roman";
+	background-color: black;
 }
 
 body{
@@ -11,8 +12,8 @@ body{
 }
 
 .top-container{
-	background: #24305E;
-	background: url("../Photos/5.jpg") no-repeat center;
+	background: black;
+	background: url("../Photos/suit.jpeg") no-repeat center;
 	text-align: center;
 	min-height: 100%;
 }
