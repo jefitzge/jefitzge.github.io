@@ -64,7 +64,7 @@ body{
 
 .profile-image-container > img{
 	height: 360px;
-	width: 540px;
+	max-width: 540px;
 	padding: 20px;
 }
 
@@ -89,9 +89,8 @@ body{
 	 0 16px 16px rgba(0,0,0,0.12);
 }
 
-.about-me{
+.aboutMe{
 	padding: 20px;
-	background-color: teal;
 }
 
 @media (max-width: 800px){

@@ -4,7 +4,8 @@ NOTE: For now menu-conatiner has NO styling*/
 /*This DIV wraps the logo the menu and the toggle button*/
 div.nav-container{
 	/*Controls the color of the navigation menu background color(MATCH WITH <ul> COLOR)*/
-	background: #040404;
+	background: 
+#53b397;
 	width: 100%;
 	/*margin pushes the navigation away from the screen borders and we dont want that so we set it to 0*/
 	margin: 0;
@@ -21,7 +22,8 @@ div.nav-container{
 
 /*This DIV wraps the logo image, it manipulates the container not the image itself*/
 div.logo-container{
-	background: white;
+	background: 
+#53b397;
 	margin: 0;
 	width: 50px;
 }
@@ -30,6 +32,7 @@ div.logo-container{
 div.logo-container > img{
 	width: 50px;
 	height: 50px;
+
 }
 div.menu-container{
 	display: flex;
@@ -41,7 +44,7 @@ a better solution can be found, eventually want the logo and menu containers to 
 
 /*This conatiner holds the toggle-menu button that will be used on mobile*/
 div.toggle-container{
-	background: white;
+	background: #53b397;
 	margin: 0px 20px;
 	padding: 4px;
 	list-style-type: none;
@@ -58,9 +61,11 @@ nav > ul{
 	padding: 0;
 	overflow: hidden;
 	/*Match this color with the navigation container color*/
-	background: #040404;
+ background: rgba(0, 0, 0, 0.5);
 	/*This flex item is a flex container, remember its contained by nav-container which is a flex container*/
 	display: flex;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 nav > ul > li{
@@ -101,31 +106,31 @@ nav > ul > li > a,
 Change the dropdown link color and text color on hover*/
 a:hover,
 .dropdown .dropbtn:hover{
-	background: #13c6e4;
-	color: black;
+	background: #d1094e;
+	color: white;
 }
 
 /*Change the link, of the current page, color on hover*/
 a:hover.active,
 .dropdown .dropbtn:hover.active{
-	background: #13c6e4;
-	color: black;
+	background: #d1094e;
+	color: white;
 }
 
 /*The link/button of the current page has its background and text color changed*/
 a.active{
-	background: #ce1c69;													/*<----------neon red but make less bright or differnet color completely different*/
-	color: black;
+	background: #434b9c;													/*<----------neon red but make less bright or differnet color completely different*/
+	color: white;
 }
 
 /*These two are needed because I made a mistake when naming the classes and I need to rewrite this part <----------------COME BACK TO THIS*/
 #active-page{
-		background: #ce1c69;
-		color: black;
+		background: #434b9c;
+		color: white;
 }
 #active-page:hover{
-		background: #13c6e4;
-		color: black;
+		background: #d1094e;
+		color: white;
 }
 /*<--------------END Main navigation Link/Button styling-------------->*/
 
@@ -144,7 +149,7 @@ a.active{
 	display: none;
 	position: absolute;
 	/*changes the color of the background for the container that holds the sub-menu links/buttons*/
-	background: #040404;
+	 background: rgba(0, 0, 0, 0.5);
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -162,8 +167,8 @@ a.active{
 
 /*Styles the hover on the sub-menu links/buttons*/
 .dropdown-content a:hover{
-	background-color: #13c6e4;
-	color: black;
+	background-color: #d1094e;
+	color: white;
 }
 /*<--------------END dropdown styling-------------->*/
 
