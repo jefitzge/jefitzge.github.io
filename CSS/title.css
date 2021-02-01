@@ -6,6 +6,7 @@ Scout-App: The Sass GUI*/
   position: relative;
   color: white;
   background: rgba(0, 0, 0, 0.5);
+  font-family: 'Montserrat', sans-serif;
   font-size: 2em;
   letter-spacing: .3em;
   animation: glitch-skew 1s infinite linear alternate-reverse;
