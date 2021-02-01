@@ -31,7 +31,7 @@ body{
 .flex-content{
 	display: flex;
 	flex-direction: row;
-	background-color: #040404;
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(67,75,156,1) 65%, rgba(83,179,151,1) 100%);
 	margin: 0;
 	padding: 20px;
 	font-size: 20px;
