@@ -134,7 +134,7 @@ a.active{
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown{
-  display: relative;
+  position: relative;
   overflow: hidden;
 }
 
