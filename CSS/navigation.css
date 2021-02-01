@@ -4,8 +4,7 @@ NOTE: For now menu-conatiner has NO styling*/
 /*This DIV wraps the logo the menu and the toggle button*/
 div.nav-container{
 	/*Controls the color of the navigation menu background color(MATCH WITH <ul> COLOR)*/
-	background: 
-#53b397;
+	background: #53b397;
 	width: 100%;
 	/*margin pushes the navigation away from the screen borders and we dont want that so we set it to 0*/
 	margin: 0;
@@ -22,8 +21,7 @@ div.nav-container{
 
 /*This DIV wraps the logo image, it manipulates the container not the image itself*/
 div.logo-container{
-	background: 
-#53b397;
+	background: #53b397;
 	margin: 0;
 	width: 50px;
 }
@@ -61,7 +59,7 @@ nav > ul{
 	padding: 0;
 	overflow: hidden;
 	/*Match this color with the navigation container color*/
- background: rgba(0, 0, 0, 0.5);
+ 	background: rgba(0, 0, 0, 0.5);
 	/*This flex item is a flex container, remember its contained by nav-container which is a flex container*/
 	display: flex;
 	border-bottom-left-radius: 10px;
@@ -149,7 +147,7 @@ a.active{
 	display: none;
 	position: absolute;
 	/*changes the color of the background for the container that holds the sub-menu links/buttons*/
-	 background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.5);
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
