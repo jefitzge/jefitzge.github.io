@@ -36,11 +36,11 @@ body{
 	padding: 20px;
 	font-size: 20px;
 	text-align: center;
-	gap: 20px;
 }
 
 /*Styles the Picture card that holds the profile image, title and contact buttons*/
 .pic-card{
+	margin: 10px;
 	/*Stops profile picture from going outside the div*/
 	overflow: hidden;
 	/*To help align elements*/
@@ -69,10 +69,11 @@ body{
 }
 
 .contact-buttons a{
-
+	background-color: orange;
 }
 
 .bio-card{
+	margin: 10px;
 	display: flex;
 	/*to align the elements in the card to be in a column*/
 	flex-direction: column;
@@ -90,6 +91,7 @@ body{
 
 .about-me{
 	padding: 20px;
+	background-color: teal;
 }
 
 @media (max-width: 800px){
