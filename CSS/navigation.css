@@ -102,21 +102,21 @@ nav > ul > li > a,
 
 /*Change the link color and text color on hover, 
 Change the dropdown link color and text color on hover*/
-a:hover,
+nav > ul > li > a:hover,
 .dropdown .dropbtn:hover{
 	background: #d1094e;
 	color: white;
 }
 
 /*Change the link, of the current page, color on hover*/
-a:hover.active,
+nav > ul > li > a:hover.active,
 .dropdown .dropbtn:hover.active{
 	background: #d1094e;
 	color: white;
 }
 
 /*The link/button of the current page has its background and text color changed*/
-a.active{
+nav > ul > li > a.active{
 	background: #434b9c;													
 	color: white;
 }
