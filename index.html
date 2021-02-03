@@ -9,7 +9,19 @@
 		<link rel="stylesheet" href="CSS/title.css">
 		<link rel="stylesheet" href="CSS/footer.css">
 		<link rel="stylesheet" href="CSS/navigation.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+		<script>
+			$(function() {
+				$(".toggle").on("click", function() {
+					if ($(".item").hasClass("active")) {
+						$(".item").removeClass("active");
+					} else {
+						$(".item").addClass("active");
+					}
+				});
+			});
+		</script>
 	</head>
 
 	<body>
@@ -22,40 +34,15 @@
 			</div>
 		</div>
 
-	    <!-- START nav-container -->    
-	    <div class="nav-container">
-	      <!-- START LOGO -->
-	      <div class="logo-container">
-	        <img src="../Photos/JF_logo.svg" alt="Logo">
-	      </div>
-	      <!-- END LOGO -->
-	      <div class="menu-container" id="menu">
-	        <nav>
-	          <ul>
-	            <li><a class="active" href="index.html">Home</a></li>
-	            <div class="dropdown">
-	              <li><a class="dropbtn" href="Projects.html">Projects <i class="fa fa-caret-down"></i></a>
-	                <div class="dropdown-content" id="myDropdown">
-	                  <ul>
-	                    <li><a href="#">Project One</a></li>
-	                    <li><a href="#">Project Two</a></li>
-	                    <li><a href="#">Project Three</a></li>
-	                  </ul>
-	                </div>
-	              </li>
-	            </div> 
-	            <li><a href="Resume.html">Resume</a></li>
-	          </ul>
-	        </nav>
-	      </div>
-	      <!-- START TOGGLE -->
-	      <div class="toggle-container">
-	        <a href="javascript:void(0);" onclick="toggle_menu()" class="fa fa-bars fa-2x"></a>
-	      </div>
-	      <!-- END TOGGLE -->
-	    </div>
-	    <!-- END Nav-container -->
-
+		<nav>
+			<ul class="menu">
+				<li class="logo"><img src="../Photos/JF_logo.svg" alt="Logo"></li>
+				<li class="item"><a class="active" href="index.html">Home</a></li>
+				<li class="item"><a href="Projects.html">Projects</a></li>
+				<li class="item"><a href="Resume.html">Resume</a></li>
+				<li class="toggle"><span class="bars"></span></li>
+			</ul>
+		</nav>
 
 		<div class="content">
 			<div class="flex-content">
@@ -96,8 +83,6 @@
 			</div>
 			<div class="flex-right"><small>&copy; Copyright 2021. All Rights Reserved</small></div>
 		</footer>
-
-		<script type="text/javascript" src="JAVASCRIPT/menu_toggle.js"></script>
 
 	</body>
 </html>

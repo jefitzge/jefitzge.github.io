@@ -1,178 +1,130 @@
-/*MAY NEED TO REMOVE ELEMENTS WITHIN MENU-CONTAINER WHEN DEVELOPING MOBILE DROP DOWN VERSION TO HELP SIMPLIFY STYLING
-NOTE: For now menu-conatiner has NO styling*/
-
-/*This DIV wraps the logo the menu and the toggle button*/
-div.nav-container{
-	/*Controls the color of the navigation menu background color(MATCH WITH <ul> COLOR)*/
-	background: #53b397;
-	width: 100%;
-	/*margin pushes the navigation away from the screen borders and we dont want that so we set it to 0*/
+*{
+	box-sizing: border-box;
 	margin: 0;
-	/*padding pushes the logo and menu in, might need this but for now keep at 0*/
 	padding: 0;
-	/*This makes it a flex container and its direct children flex items*/
-	display: flex;
-	/*This makes the first and last flex items be pushed to the start and end of the flex conatiner
-	with space in between them*/
-	justify-content: space-between;
-	/*This is to align all the flex items along the cross/x axis*/
-	align-items: center;
 }
 
-/*This DIV wraps the logo image, it manipulates the container not the image itself*/
-div.logo-container{
-	background: #53b397;
-	margin: 0;
-	width: 50px;
+nav{
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	background: rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
 }
 
-/*This controls the height and width of the image in the .logo-container div*/
-div.logo-container > img{
-	width: 50px;
-	height: 50px;
-
-}
-div.menu-container{
-	display: flex;
-}
-
-/*NOTE: We only want this to appear when the browser is resized so it should be hidden at all other times.
-NOTE: This will also be used to push the navigation menu towards the center of the page until
-a better solution can be found, eventually want the logo and menu containers to sit next to each other, maybe...*/
-
-/*This conatiner holds the toggle-menu button that will be used on mobile*/
-div.toggle-container{
-	background: #53b397;
-	margin: 0px 20px;
-	padding: 4px;
+.menu{
 	list-style-type: none;
-	/*the element will still take up the same space as before. The element will be hidden, but still affect the layout*/
-	visibility: hidden;
 }
 
-/*This is the navigation menu*/
-nav > ul{
-	/*Removes bullet points from links*/
+.menu li a{
 	text-decoration: none;
-	/*These two lines remove space around the links for better styling*/
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	/*Match this color with the navigation container color*/
- 	background: rgba(0, 0, 0, 0.5);
-	/*This flex item is a flex container, remember its contained by nav-container which is a flex container*/
-	display: flex;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-}
-
-nav > ul > li{
-	display: inline-block;
-}
-
-/*<--------------START Main navigation Link/Button styling (not sub menu)-------------->*/
-nav > ul > li > a, 
-.dropdown .dropbtn,
-.dropdown-content a{
-	/*Displaying the links as block elements makes the 
-	whole link area clickable (not just the text), and 
-	it allows us to specify the width (and padding, margin, height, etc)*/
-	display: inline-block; 
-	width: 90px;
-	height: 20px;
-	/*Sets the space between links/button*/
-	margin: 10px;
-	padding: 10px;
-	/*Sets the background color of the link/button*/
-	background: white;																			/*<----------------Maybe pick a different white*/
-	/*Sets the color of the text of the link/button*/
+	padding: 7px 15px;
+	background-color: white;
 	color: black;
-	/*Removes underline from links/buttons*/
-	text-decoration: none;
-	/*Centers text on link/button*/
-	text-align: center;
-	/*link/button text is made all uppercase*/
-	text-transform: uppercase;
-	/*makes font thicker*/
-	font-weight: 900;
-	/*sets font size*/
-	font-size: 14px;
-	border-radius: 20px;
+	border: 1px solid black;
+	border-radius: 50em;
 }
 
-/*Change the link color and text color on hover, 
-Change the dropdown link color and text color on hover*/
-nav > ul > li > a:hover,
-.dropdown .dropbtn:hover{
+.menu li a:hover, .menu li a.active:hover{
 	background: #d1094e;
 	color: white;
 }
 
-/*Change the link, of the current page, color on hover*/
-nav > ul > li > a:hover.active,
-.dropdown .dropbtn:hover.active{
-	background: #d1094e;
-	color: white;
-}
-
-/*The link/button of the current page has its background and text color changed*/
-nav > ul > li > a.active{
+.menu li a.active{
 	background: #434b9c;													
 	color: white;
 }
 
-/*These two are needed because I made a mistake when naming the classes and I need to rewrite this part <----------------COME BACK TO THIS*/
-#active-page{
-		background: #434b9c;
-		color: white;
+.menu li{
+	font-size: 16px;
+	padding: 10px 10px;
 }
-#active-page:hover{
-		background: #d1094e;
-		color: white;
-}
-/*<--------------END Main navigation Link/Button styling-------------->*/
-
-/*<--------------Start drowpdown styling-------------->*/
-/*NOTE: Some dropdown styling is included in Main-navigation styling to reduce code*/
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown{
-/*  position: relative;*/
-  overflow: hidden;
+/*Adjusts the padding for the toggle button in mobile*/
+li.toggle{
+	padding: 10px 20px;
 }
 
-/*This styles the container of the dropdown box*/
-.dropdown-content{
-	/*if this is not set the sub-menu will be open and cannot be closed*/
+.menu li a{
+	display: block;
+}
+
+.logo img{
+	width: 50px;
+	height: 50px;
+}
+
+
+/*Mobile Menu*/
+.menu{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.toggle{
+	order: 0;
+}
+
+.item{
+	width: 100%;
+	text-align: center;
+	order: 1;
 	display: none;
+}
+/*javascript will add this class dynamcially when the toggle is clicked*/
+.item.active{
+	display: block;
+}
+
+/*Start TOGGLE*/
+.toggle{
+	cursor: pointer;
+}
+
+.bars{
+	background: white;
+	display: inline-block;
+	height: 3px;
+	width: 20px;
+	position: relative;
+}
+
+.bars::before, .bars::after{
+	background: white;
+	content:""; 
+	display: inline-block;
+	height: 3px;
+	width: 20px;
 	position: absolute;
-	/*changes the color of the background for the container that holds the sub-menu links/buttons*/
-	background: rgba(0, 0, 0, 0.5);
-	border-bottom-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
 }
 
-/*This styles the container of the dropdown box*/
-.dropdown-content > ul{
-	/*Removes bullet points from links*/
-	list-style-type: none;
-	/*These two lines remove space around the links for better styling*/
-	margin: 0;
-	padding: 0;
+.bars::before{
+	top: -10px;
 }
-
-/*Styles the hover on the sub-menu links/buttons*/
-.dropdown-content a:hover{
-	background-color: #d1094e;
-	color: white;
+.bars::after{
+	top: -5px;
 }
-/*<--------------END dropdown styling-------------->*/
+/*End TOGGLE*/
 
-@media screen and (max-width: 900px){
-	div.toggle-container{
-		/*Make the toggle button visbile when mobile navigation menu is added*/
-		visibility: hidden;
+
+/*Desktop Menu*/
+@media all and (min-width: 768px){
+	.item{
+		display: block;
+		width: auto;
+		order: 1;
+	}
+	.toggle{
+		display: none;
+	}
+	.logo{
+		flex-grow: 1;
+		order: 0;
+	}
+	.menu li{
+		padding-top: 15px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }

@@ -18,10 +18,6 @@ body{
 	min-height: 100%;
 }
 
-.top-container > p{
-	color: white;
-}
-
 .content{
 	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
 	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(67,75,156,1) 65%, rgba(83,179,151,1) 100%);
