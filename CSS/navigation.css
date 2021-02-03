@@ -117,7 +117,7 @@ a:hover.active,
 
 /*The link/button of the current page has its background and text color changed*/
 a.active{
-	background: #434b9c;													/*<----------neon red but make less bright or differnet color completely different*/
+	background: #434b9c;													
 	color: white;
 }
 

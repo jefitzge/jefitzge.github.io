@@ -24,18 +24,19 @@ body{
 
 .content{
 	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-	background-color: #040404;
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(67,75,156,1) 65%, rgba(83,179,151,1) 100%);
 }
 
-/*This ccontainer keeps the home page elements in line*/
+/*This ccontainer holds flex items*/
 .flex-content{
 	display: flex;
 	flex-direction: row;
-	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(67,75,156,1) 65%, rgba(83,179,151,1) 100%);
-	margin: 0;
+	margin: 30px;
 	padding: 20px;
 	font-size: 20px;
 	text-align: center;
+	border-radius: 5px;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 /*Styles the Picture card that holds the profile image, title and contact buttons*/
@@ -49,17 +50,8 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #f2f3f4;
 	/*soften the corners of the card*/
 	border-radius: 5px;
-	/* Create smoother box-shadows by layering multiple
-	 shadows with gradually increasing radius and offset
-	 SOURCE: https://tobiasahlin.com/blog/layered-smooth-box-shadows/ */
-	 box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
-	 0 2px 2px rgba(0,0,0,0.12), 
-	 0 4px 4px rgba(0,0,0,0.12), 
-	 0 8px 8px rgba(0,0,0,0.12),
-	 0 16px 16px rgba(0,0,0,0.12);
 }
 
 .profile-image-container > img{
@@ -79,14 +71,8 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #f2f3f4;
 	/*soften the corners of the card*/
 	border-radius: 5px;
-	 box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
-	 0 2px 2px rgba(0,0,0,0.12), 
-	 0 4px 4px rgba(0,0,0,0.12), 
-	 0 8px 8px rgba(0,0,0,0.12),
-	 0 16px 16px rgba(0,0,0,0.12);
 }
 
 .aboutMe{
@@ -96,5 +82,6 @@ body{
 @media (max-width: 800px){
 	.flex-content{
 		flex-direction: column;
+		align-items: center;
 	}
 }
