@@ -10,8 +10,9 @@ nav{
 }
 
 .menu{
-	list-style-type: none;
+	margin: 0;
 	padding: 10px;
+	list-style-type: none;
 }
 
 .menu li a{
