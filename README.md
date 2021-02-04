@@ -4,11 +4,12 @@ This website will become a portfolio of all my works as well as a way for me to 
 ## **Short Term Goals**
 - [X] Complete Navigation Bar
 	- [ ] Add new animation to navigation bar and adjust style
-	- [ ] Complete Mobile Navigation Bar
+	- [X] Complete Mobile Navigation Bar
 - [ ] Complete Home Page
 - [ ] Complete Projects page
 	- [ ] Add sample project
 - [ ] Complete Resume Page
+- [ ] Add title tags for SEO
 
 ## **Completed Goals**
 - [x] Remove old navigation bar animation
