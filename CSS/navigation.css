@@ -1,11 +1,24 @@
+:root {
+	/*Buttons*/
+	--main-bt-color: #ffffff;
+	--bt--hover-color: #d1094e;
+	--bt-active-color: #434b9c;
+	--main-bt-text: #000000;
+	--bt-text-hover: #ffffff;
+	--bt-text-active: #ffffff;
+	/*Backgrounds*/
+	--main-background: #53b397;
+	--main-nav-background: rgba(0, 0, 0, 0.5); 
+}
+
 .nav-container{
-	background: #53b397;
+	background: var(--main-background);
 }
 
 nav{
 	border-bottom-right-radius: 25px;
 	border-bottom-left-radius: 25px;
-	background: rgba(0, 0, 0, 0.5);
+	background: var(--main-nav-background);
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
 }
 
@@ -18,20 +31,20 @@ nav{
 .menu li a{
 	text-decoration: none;
 	padding: 7px 15px;
-	background-color: white;
-	color: black;
+	background-color: var(--main-bt-color);
+	color: var(--main-bt-text);
 	border: 1px solid black;
 	border-radius: 50em;
 }
 
 .menu li a:hover, .menu li a.active:hover{
-	background: #d1094e;
-	color: white;
+	background: var(--bt--hover-color);
+	color: var(--bt-text-hover);
 }
 
 .menu li a.active{
-	background: #434b9c;													
-	color: white;
+	background: var(--bt-active-color);													
+	color: var(--bt-text-active);
 }
 
 .menu li{
