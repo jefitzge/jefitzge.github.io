@@ -34,12 +34,13 @@ body{
 	border-radius: 5px;
 	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 	background-color: white;
-	gap: 3.5rem;
+	gap: 3rem;
 }
 
 /*Styles the Picture card that holds the profile image, title and contact buttons*/
 .pic-card{
 	margin: 10px;
+	padding: 5px;
 	/*Stops profile picture from going outside the div*/
 	overflow: hidden;
 	/*To help align elements*/
@@ -48,14 +49,11 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/*soften the corners of the card*/
-	border-radius: 5px;
 }
 
 .profile-image-container > img{
-	height: 360px;
-	max-width: 540px;
-	padding: 20px;
+	height: auto;
+	max-width: 100%;
 }
 
 .contact-buttons a{
@@ -69,18 +67,12 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/*soften the corners of the card*/
-	border-radius: 5px;
 }
 
 .aboutMe p{
 	color: black;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 0;
-	padding-bottom: 2px;
+    padding: 5px;
 	margin: 0;
-	text-indent: 30px;
 	font-family: "Arial", "Times New Roman";
 }
 
