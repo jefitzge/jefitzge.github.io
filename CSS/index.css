@@ -34,6 +34,7 @@ body{
 	border-radius: 5px;
 	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 	background-color: white;
+	gap: 3.5rem;
 }
 
 /*Styles the Picture card that holds the profile image, title and contact buttons*/
@@ -72,8 +73,15 @@ body{
 	border-radius: 5px;
 }
 
-.aboutMe{
-	padding: 20px;
+.aboutMe p{
+	color: black;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 0;
+	padding-bottom: 2px;
+	margin: 0;
+	text-indent: 30px;
+	font-family: "Arial", "Times New Roman";
 }
 
 @media (max-width: 800px){
