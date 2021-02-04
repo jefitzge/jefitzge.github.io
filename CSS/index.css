@@ -59,6 +59,9 @@ body{
 
 .contact-buttons a{
 	color: black;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-decoration: none;
 }
 
 .bio-card{
