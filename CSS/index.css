@@ -1,6 +1,6 @@
 html, body{
 	height: 100%;
-	font-family: "Courier New", "Times New Roman";
+	font-family: 'Roboto', sans-serif;
 	background-color: black;
 }
 
@@ -77,7 +77,7 @@ body{
 	color: black;
     padding: 5px;
 	margin: 0;
-	font-family: "Arial", "Times New Roman";
+	font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 800px){
