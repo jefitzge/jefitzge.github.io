@@ -54,6 +54,7 @@ body{
 .profile-image-container > img{
 	height: auto;
 	max-width: 100%;
+	border-radius: 5px;
 }
 
 .contact-buttons a{
