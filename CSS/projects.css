@@ -1,0 +1,61 @@
+html, body{
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	background-color: black;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.content{
+	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(67,75,156,1) 65%, rgba(83,179,151,1) 100%);
+}
+
+.projects-container{
+	display: flex;
+	flex-direction: column;
+	margin: 30px;
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	background-color: white;
+	gap: 2rem;
+}
+
+.project{
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	border: 2px solid red;
+}
+
+.proj-preview{
+	display: flex;
+	flex-direction: column;
+	height: 100px;
+	width: 100px;
+	border: 2px solid blue;
+}
+.proj-image{
+		/*Style the preview image here, or video/gif, whatever you need*/
+}
+.proj-buttons-container{
+	/*Style the buttons here*/
+}
+
+.proj-description-container{
+	/*Style the text and how its layed out*/
+}
+
+/*Desktop view*/
+@media all and (min-width: 768px){
+	/*change layout for bigger screens*/
+}
