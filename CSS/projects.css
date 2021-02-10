@@ -45,10 +45,20 @@ body{
 	border: 2px solid blue;
 }
 .proj-image{
-		/*Style the preview image here, or video/gif, whatever you need*/
+	/*Style the preview image here, or video/gif, whatever you need*/
+	height: 60px;
+	width: 60px;
 }
+.proj-image > img{
+	height: auto;
+	width: 100%;
+}
+
 .proj-buttons-container{
-	/*Style the buttons here*/
+	/*Style the button container*/
+}
+.proj-buttons-container > a{
+	/*Style buttons*/
 }
 
 .proj-description-container{
