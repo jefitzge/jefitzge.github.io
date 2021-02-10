@@ -1,3 +1,11 @@
+:root {
+	/*Buttons*/
+	--main-bt-color: #ffffff;
+	--main-bt-text: #000000;
+	--bt--hover-color: #d1094e;
+	--bt-text-hover: #ffffff;
+}
+
 html, body{
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
@@ -20,7 +28,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	margin: 30px;
-	padding: 20px;
+	padding: 5px;
 	font-size: 20px;
 	text-align: center;
 	border-radius: 5px;
@@ -35,19 +43,20 @@ body{
 	margin: 0;
 	padding: 0;
 	border: 2px solid red;
+    /* Style the project sections more to make them pop*/
 }
 
 .proj-preview{
 	display: flex;
 	flex-direction: column;
-	height: 100px;
-	width: 100px;
-	border: 2px solid blue;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 .proj-image{
-	/*Style the preview image here, or video/gif, whatever you need*/
-	height: 60px;
-	width: 60px;
+	/*Style the preview image container here, or video/gif, whatever you need*/
+	height: auto;
+	width: 100%;
 }
 .proj-image > img{
 	height: auto;
@@ -56,16 +65,46 @@ body{
 
 .proj-buttons-container{
 	/*Style the button container*/
+	padding: 10px;
 }
 .proj-buttons-container > a{
 	/*Style buttons*/
+    text-decoration: none;
+	padding: 5px 15px;
+	font-size: 14px;
+	background-color: var(--main-bt-color);
+	color: var(--main-bt-text);
+	border: 1px solid black;
+	/* 	Make them glossy glass buttons? <---------------ATTENTION NEEDED */
+	border-radius: 50em;
 }
+.proj-buttons-container > a:hover{
+	background: var(--bt--hover-color);
+	color: var(--bt-text-hover);
+}
+/* ADD ANIMATION HERE FOR BUTTONS*/
 
 .proj-description-container{
-	/*Style the text and how its layed out*/
+	margin: 0;
+	padding: 5px;
+	text-align: left;
 }
 
 /*Desktop view*/
 @media all and (min-width: 768px){
 	/*change layout for bigger screens*/
+    /* Scale the image to fit desktop version */
+    /* Make the preview container sit to the left of the description
+    take up 25%? maybe */
+    .project{
+    	flex-direction: row;
+    }
+    .proj-preview{
+    	width: 25%;
+    }
+    .proj-description-container{
+        /* helps keep content away from */
+    	margin-left: 10px;
+    }
+
 }
