@@ -1,14 +1,18 @@
 # **This is my personal website**
 This website will become a portfolio of all my works as well as a way for me to expand my coding skills. There will be several challenges along the way. 
 
-## **Short Term Goals**
+## **Goals**
 - [ ] Make media queries more coherent, in index.css the media query changes the view for desktop to mobile but in projects.css its goes mobile to desktop, this isnt a huge issue as both work but it makes it confusing when going back and forth between individual files and trying to style for mobile/desktop.
 - [X] Complete Navigation Bar
 	- [ ] Add new animation to navigation bar and adjust style
 	- [X] Complete Mobile Navigation Bar
 - [ ] Complete Home Page
+	- [ ] Get email button working 
+		- [ ] encrypt email to prevent webcrawlers from scrapping email address
 - [ ] Complete Projects page
 	- [X] Add sample project
+	- [ ] Add a read more button for each description if I want to give more background or link to a write-up
+		- [ ] Maybe add a blog for talking baout projects and the design process (late stages of project)
 - [ ] Complete Resume Page
 - [ ] Add title tags for SEO
 
