@@ -67,6 +67,9 @@ body{
 	padding-right: 10px;
 	text-decoration: none;
 }
+.contact-buttons a:hover{
+	color: #d1094e;
+}
 
 .bio-card{
 	margin: 10px;
