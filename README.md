@@ -14,7 +14,6 @@ This website will become a portfolio of all my works as well as a way for me to 
 	- [ ] Add a read more button for each description if I want to give more background or link to a write-up
 		- [ ] Maybe add a blog for talking baout projects and the design process (late stages of project)
 - [ ] Complete Resume Page
-- [ ] Add title tags for SEO
 
 ## **Completed Goals**
 - [x] Remove old navigation bar animation
@@ -25,6 +24,7 @@ This website will become a portfolio of all my works as well as a way for me to 
 	- [X] Removed: About.html, Contact.html, resume.css, Contact.css, navbartoggle.js, stickyNavScript.js, as part of restructuring of website
 		- [X] Added new navigation bar
 		- [X] Added menu_dropdown.js
+- [X] Add title tags for SEO
 
 
 ## **Late Term Goals**
