@@ -45,6 +45,7 @@ body{
 .pic-card{
 	margin: 10px;
 	padding: 5px;
+	width: 100%;  								/*<-----------------ATTENTION-----------ATTENTION-----------ATTENTION-----------Look into changing this*/
 	/*Stops profile picture from going outside the div*/
 	overflow: hidden;
 	/*To help align elements*/
@@ -85,6 +86,7 @@ body{
     padding: 5px;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
+	font-size: clamp(1rem, 0.8077rem + 1.0256vw, 1.6rem); /*<-----------------ATTENTION-----------ATTENTION-----------ATTENTION-----------Look into changing this*/
 }
 
 @media (max-width: 800px){
