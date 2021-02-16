@@ -82,7 +82,8 @@ body{
 	/* 	Make them glossy glass buttons? <---------------ATTENTION NEEDED */
 	border-radius: 50em;
 }
-.proj-buttons-container > a:hover{
+.proj-buttons-container > a:hover,
+.proj-description-container > a:hover{
 	background: var(--bt--hover-color);
 	color: var(--bt-text-hover);
 }
