@@ -70,7 +70,8 @@ body{
 	/*Style the button container*/
 	padding: 10px;
 }
-.proj-buttons-container > a{
+.proj-buttons-container > a,
+.proj-description-container > a{
 	/*Style buttons*/
     text-decoration: none;
 	padding: 5px 15px;
