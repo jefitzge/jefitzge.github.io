@@ -1,69 +1,26 @@
-html, body {
+html, body{
 	height: 100%;
-	font-family: "Courier New", "Times New Roman";
+	font-family: 'Roboto', sans-serif;
+	background-color: black;
 }
 
-body {
+body{
 	margin: 0;
 	padding: 0;
 	display: flex;
 	flex-direction: column;
 }
 
-.content {
+.content{
 	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-	padding: 20px;
-	background-color: #f2f3f4;
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(67,75,156,1) 65%, rgba(83,179,151,1) 100%);
 }
 
-.flex-content {
-	display: flex;
-	flex-direction: row;
-	font-size: 20px;
-	text-align: center;
-	gap: 20px;
-}
 
-.card1 {
-	background-color: white;
-	color: grey;
-	padding: 10px;
-	flex: 33.3%;
-	border-radius: 5px;
-	box-shadow: black 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.card2 {
-	background-color: white;
-	color: grey;
-	padding: 10px;
-	flex: 66.6%;
-	border-radius: 5px;
-	box-shadow: black 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.card1-inner {
-	background-color: white;
-	color: grey;
-}
-
-.card1-inner-top {
-	background-color: white;
-	color: grey;
-	flex: 25%;
-}
-.card1-inner-bottom {
-	background-color: white;
-	color: grey;
-	flex: 75%;
-}
 
 
 @media (max-width: 800px){
-	.flex-content{
-		flex-direction: column;
-		gap: 10px;
-	}
+
 }
 
 
