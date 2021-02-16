@@ -28,6 +28,7 @@ This website will become a portfolio of all my works as well as a way for me to 
 - [X] Complete Home Page
 	- [X] Get email button working 
 		- [X] encrypt email to prevent webcrawlers from scrapping email address
+- [X] Added favicon to all webpages
 
 
 ## **Late Term Goals**
