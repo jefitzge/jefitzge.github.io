@@ -55,7 +55,7 @@ body{
 .location, 
 .date, 
 .bullet{
-  font-size: clamp(0.5rem, 0.3077rem + 1.0256vw, 1rem);
+  font-size: clamp(0.7rem, 0.3077rem + 1.0256vw, 1rem);
 }
 
 /* Mobile Version */
