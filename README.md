@@ -14,6 +14,7 @@ This website will become a portfolio of all my works as well as a way for me to 
 - [ ] Complete Resume Page
 	- [X] Custom Resume or embed word/pdf
 		- [ ] Develop mobile version
+		- [ ] Add proper url name when I get domain
 		- [ ] upload and add link for PDF
 		- [ ] Add Email and Phone Number
 		- [ ] Review spelling 3x
