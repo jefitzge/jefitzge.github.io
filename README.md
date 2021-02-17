@@ -16,7 +16,7 @@ This website will become a portfolio of all my works as well as a way for me to 
 		- [X] Develop mobile version
 		- [ ] Add proper url name when I get domain
 		- [X] upload and add link for PDF
-		- [ ] Add Email and Phone Number
+		- [X] Add Email and Phone Number
 		- [ ] Review spelling 3x
 - [ ] Make media queries more coherent, in index.css the media query changes the view for desktop to mobile but in projects.css its goes mobile to desktop, this isnt a huge issue as both work but it makes it confusing when going back and forth between individual files and trying to style for mobile/desktop.
 
