@@ -1,26 +1,126 @@
+:root {
+  /*Buttons*/
+  --main-bt-color: #ffffff;
+  --main-bt-text: #000000;
+  --bt--hover-color: #d1094e;
+  --bt-text-hover: #ffffff;
+}
+
 html, body{
-	height: 100%;
-	font-family: 'Roboto', sans-serif;
-	background-color: black;
+  height: 100%;
+  font-family: "Times New Roman";
 }
 
 body{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
-
 .content{
-	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(67,75,156,1) 65%, rgba(83,179,151,1) 100%);
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(67,75,156,1) 65%, rgba(83,179,151,1) 100%);
 }
 
+/*--------------------------------------------- ADD MOBILE VERSION HERE ---------------------------------------------*/
 
+/*Desktop Version*/
+@media screen and (min-width: 900px){
+  .resume-container{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    color: white;
+  }
 
+  .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
 
-@media (max-width: 800px){
+  .title > h1{
+    font-size: 36px;
+  }
+  .contact-info{
+    font-size: 18px;
+    margin: 0;
+  }
+  .resume-button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  .resume-button:hover{
+    color: #d1094e;
+  }
+  .section{
+    margin-bottom: 20px;
+    /*Mess with clamp in here to help with mobile*/
+  }
 
+  .section-title{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0;
+    border-bottom: 1px solid white;
+  }
+  .sub-title{
+    font-weight: bold;
+
+  }
+  .sub-title-italics{
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+  }
+
+  .alignment-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .alignment-wrapper > p{
+    margin: 5px;
+    padding: 0;
+  }
+
+  .bullet{
+    text-indent: 5%;
+  }
+
+  .pdf-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .pdf-button{
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 20px;
+    background-color: var(--main-bt-color);
+    color: var(--main-bt-text);
+    border: 1px solid black;
+    border-radius: 50em;
+  }
+  .pdf-button:hover{
+    background: var(--bt--hover-color);
+    color: var(--bt-text-hover);
+  }
 }
-
-
