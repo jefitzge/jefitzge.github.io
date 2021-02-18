@@ -13,6 +13,7 @@
 
 .nav-container{
 	background: var(--main-background);
+	font-family: 'Roboto', sans-serif;
 }
 
 nav{
