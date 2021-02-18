@@ -2,7 +2,7 @@
   /*Buttons*/
   --main-bt-color: #ffffff;
   --main-bt-text: #000000;
-  --bt--hover-color: #d1094e;
+  --bt--hover-color: #dc2051;
   --bt-text-hover: #ffffff;
 }
 
@@ -20,7 +20,7 @@ body{
 
 .content{
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(67,75,156,1) 65%, rgba(83,179,151,1) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(67,75,156,1) 65%, #7a799d 100%);
 }
 
 /* PDF Button Styling*/

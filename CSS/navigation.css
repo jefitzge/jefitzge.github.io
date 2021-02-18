@@ -1,13 +1,13 @@
 :root {
 	/*Buttons*/
 	--main-bt-color: #ffffff;
-	--bt--hover-color: #d1094e;
-	--bt-active-color: #434b9c;
+	--bt--hover-color: #dc2051;
+	--bt-active-color: #260c67;
 	--main-bt-text: #000000;
 	--bt-text-hover: #ffffff;
 	--bt-text-active: #ffffff;
 	/*Backgrounds*/
-	--main-background: #53b397;
+	--main-background: #7a799d;
 	--main-nav-background: rgba(0, 0, 0, 0.5); 
 }
 
