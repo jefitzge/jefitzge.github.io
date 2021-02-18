@@ -5,11 +5,16 @@ Scout-App: The Sass GUI*/
 .glitch {
   position: relative;
   color: white;
-  background: rgba(0, 0, 0, 0.5);
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
   letter-spacing: .3em;
   animation: glitch-skew 1s infinite linear alternate-reverse;
+}
+/* For Mobile landing page change font size to make name fit page better*/
+@media (max-width: 800px){
+  .glitch{
+    font-size: 1.5em;
+  }
 }
 
 .glitch::before {
