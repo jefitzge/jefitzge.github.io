@@ -16,6 +16,10 @@ Scout-App: The Sass GUI*/
     font-size: 1.5em;
     background: rgba(0, 0, 0, 0.5);
   }
+  /*testing positioning */
+  #wrapper{
+    height: 200px;
+  }
 }
 
 .glitch::before {
