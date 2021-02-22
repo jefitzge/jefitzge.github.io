@@ -71,7 +71,7 @@ body{
 	padding: 10px;
 }
 .proj-buttons-container > a,
-.proj-description-container > a{
+.readmore{
 	/*Style buttons*/
     text-decoration: none;
 	padding: 5px 15px;
@@ -83,7 +83,7 @@ body{
 	border-radius: 50em;
 }
 .proj-buttons-container > a:hover,
-.proj-description-container > a:hover{
+.readmore:hover{
 	background: var(--bt--hover-color);
 	color: var(--bt-text-hover);
 }
