@@ -54,6 +54,8 @@ body{
     width: 100%;
     margin: 0;
     padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 .proj-image{
 	/*Style the preview image container here, or video/gif, whatever you need*/
@@ -70,8 +72,7 @@ body{
 	/*Style the button container*/
 	padding: 10px;
 }
-.proj-buttons-container > a,
-.readmore{
+.proj-buttons-container > a{
 	/*Style buttons*/
     text-decoration: none;
 	padding: 5px 15px;
@@ -82,8 +83,10 @@ body{
 	/* 	Make them glossy glass buttons? <---------------ATTENTION NEEDED */
 	border-radius: 50em;
 }
-.proj-buttons-container > a:hover,
-.readmore:hover{
+.readmore{ color: white;}
+.readmore:hover{ color: var(--bt-text-hover); }
+
+.proj-buttons-container > a:hover{
 	background: var(--bt--hover-color);
 	color: var(--bt-text-hover);
 }
@@ -92,6 +95,7 @@ body{
 .proj-description-container{
 	margin: 0;
 	padding: 5px;
+	width: 100%;
 	text-align: left;
 	color: white;
 }
