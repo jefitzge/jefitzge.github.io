@@ -97,7 +97,6 @@ body{
 	text-align: left;
 	color: white;
 	font-size: clamp(0.7rem, 0.3077rem + 1.0256vw, 1rem);
-	word-wrap: break-word;
 }
 
 /*Desktop view*/
