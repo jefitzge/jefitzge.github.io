@@ -17,7 +17,7 @@ This website will become a portfolio of all my works as well as a way for me to 
 		- [X] upload and add link for PDF
 		- [X] Add Email and Phone Number
 		- [ ] Review spelling 3x
-- [ ] Make media queries more coherent, in index.css the media query changes the view for desktop to mobile but in projects.css its goes mobile to desktop, this isnt a huge issue as both work but it makes it confusing when going back and forth between individual files and trying to style for mobile/desktop.
+- [ ] Add stlying for other browsers (i.e. FireFox and Internet Explorer)
 
 ## **Completed Goals**
 - [x] Remove old navigation bar animation
@@ -33,10 +33,10 @@ This website will become a portfolio of all my works as well as a way for me to 
 	- [X] Get email button working 
 		- [X] encrypt email to prevent webcrawlers from scrapping email address
 - [X] Added favicon to all webpages
+- [X] Get Domain name
 
 
 ## **Late Term Goals**
-- [ ] Get Domain name
 - [ ] Document development in a word document or one note, similarly to my senior year design projects (possibly add this documentation to the website as well)
 - [ ] Make the Website Mobile Friendly
 - [ ] Account for 4k monitors...(Add queries to change content sizing)
