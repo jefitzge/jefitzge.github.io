@@ -99,6 +99,10 @@ body{
 	font-size: clamp(0.7rem, 0.3077rem + 1.0256vw, 1rem);
 }
 
+h4{
+	font-size: 16px;
+}
+
 /*Project Flairs*/
 .red{background: #fa5a5a;}
 .yellow {background: #f0d264;}
@@ -145,5 +149,7 @@ body{
         width: 80%;
     	margin-left: 10px;
     }
-
+    h4{
+		font-size: 20px;
+	}
 }
