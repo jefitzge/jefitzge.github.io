@@ -99,6 +99,35 @@ body{
 	font-size: clamp(0.7rem, 0.3077rem + 1.0256vw, 1rem);
 }
 
+/*Project Flairs*/
+.red{background: #fa5a5a;}
+.yellow {background: #f0d264;}
+.green {background: #82c8a0;}
+.cyan {background: #7fccde;}
+.blue {background: #6698cb;}
+.purple {background: #cb99c5;}
+
+.red,
+.yellow,
+.green,
+.cyan,
+.blue,
+.purple{
+	font-size: clamp(0.7rem, 0.3077rem + 1.0256vw, 1rem);
+	font-weight: 100;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-left: 5px;
+
+	color: black;
+	text-align: center;
+	width: auto;
+	display: inline-block;
+	border-radius: 20em;
+}
+
 /*Desktop view*/
 @media all and (min-width: 768px){
 	/*change layout for bigger screens*/
