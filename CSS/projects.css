@@ -51,7 +51,6 @@ body{
 .proj-preview{
 	display: flex;
 	flex-direction: column;
-    width: 100%;
     margin: 0;
     padding: 0;
     justify-content: center;
@@ -95,7 +94,6 @@ body{
 .proj-description-container{
 	margin: 0;
 	padding: 5px;
-	width: 100%;
 	text-align: left;
 	color: white;
 	font-size: clamp(0.7rem, 0.3077rem + 1.0256vw, 1rem);
@@ -112,10 +110,11 @@ body{
     	flex-direction: row;
     }
     .proj-preview{
-    	width: 25%;
+    	width: 20%;
     }
     .proj-description-container{
         /* helps keep content away from */
+        width: 80%;
     	margin-left: 10px;
     }
 
