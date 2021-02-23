@@ -6,8 +6,7 @@ This website will become a portfolio of all my works as well as a way for me to 
 	- [ ] Add new animation to navigation bar and adjust style
 	- [X] Complete Mobile Navigation Bar
 - [ ] Complete Projects page
-	- [ ] Add a nvigation style bar that catagorizes each project by type(ex: Language, hardware, software etc)
-		- [ ] Using buttons that link to specific part of a page, projects of similar type should be in their own container
+	- [X] Add Project flairs 
 	- [X] Add sample project
 		- [X] Add a read more button for each description if I want to give more background or link to a write-up
 	- [ ] Maybe add a blog for talking baout projects and the design process (late stages of project)
