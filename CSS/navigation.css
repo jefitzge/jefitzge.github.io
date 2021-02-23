@@ -29,23 +29,53 @@ nav{
 	list-style-type: none;
 }
 
-.menu li a{
-	text-decoration: none;
+.menu li a {	
 	padding: 7px 15px;
+
 	background-color: var(--main-bt-color);
 	color: var(--main-bt-text);
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	border-radius: 50em;
-}
 
-.menu li a:hover, .menu li a.active:hover{
-	background: var(--bt--hover-color);
+	font-weight: 100;
+
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 1;
+	-webkit-transition: color 150ms ease-in-out;
+	transition: color 150ms ease-in-out;
+}
+.menu li a:hover, .item a:focus {
 	color: var(--bt-text-hover);
 }
 
 .menu li a.active{
-	background: var(--bt-active-color);													
+	background-color: var(--bt-active-color);
 	color: var(--bt-text-active);
+}
+.menu li a:after {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	      transform: translateX(-50%);
+	width: 0;
+	height: 100%;
+	background: var(--bt--hover-color);
+	z-index: -1;
+	-webkit-transition: width 150ms ease-in-out;
+	transition: width 300ms ease-in-out;
+}
+
+.menu li a:hover:after {
+	width: 110%;
 }
 
 .menu li{
