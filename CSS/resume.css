@@ -139,6 +139,8 @@ body{
 }
 
 .bullet{
+  /*Helps indent the bullet point*/
+  list-style-position: inside;
   padding-left: 5%;
 }
 
