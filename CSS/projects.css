@@ -104,19 +104,21 @@ h4{
 }
 
 /*Project Flairs*/
-.red{background: #fa5a5a;}
-.yellow {background: #f0d264;}
-.green {background: #82c8a0;}
-.cyan {background: #7fccde;}
-.blue {background: #6698cb;}
-.purple {background: #cb99c5;}
+.red{background: #fa5a5a;} /*Java*/
+.yellow {background: #f0d264;} /*Web Development*/
+.green {background: #82c8a0;} /*Python*/
+.cyan {background: #7fccde;} /*C++*/
+.blue {background: #6698cb;} /*C#*/
+.purple {background: #cb99c5;} /*Hardware*/
+.misc {background: #d3d3d3;} /*HTML, CSS, Javascript, etc...*/
 
 .red,
 .yellow,
 .green,
 .cyan,
 .blue,
-.purple{
+.purple,
+.misc{
 	font-size: clamp(0.7rem, 0.3077rem + 1.0256vw, 1rem);
 	font-weight: 100;
 	padding-left: 7px;
