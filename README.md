@@ -4,6 +4,7 @@ This website will become a portfolio of all my works as well as a way for me to 
 ## **Goals**
 - [ ] Website redesign
 - [ ] Secuity update
+	- [ ] Cloudflare integration
 - [ ] Update resume
 
 - [ ] Add 5 Projects
