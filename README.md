@@ -12,11 +12,7 @@ This website will become a portfolio of all my works as well as a way for me to 
 	-[ ] LinkedIn
 
 - [ ] Add 5 Projects
-- [ ] Add stlying for other browsers (i.e. FireFox and Internet Explorer)
-	- [ ] Account for 4k monitors...(Add queries to change content sizing)
-- [ ] Launch Website on other social media
-- [ ] Website Speed optimization
-	- [ ] Use Google Analytics, Page Speed Insights and web.dev to help with optimization 
+- [ ] Launch Website on social media
 
 ## **Completed Goals**
 - [x] Remove old navigation bar animation
