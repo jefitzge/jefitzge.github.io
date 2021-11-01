@@ -1,19 +1,23 @@
 # **This is my personal website**
 This website will become a portfolio of all my works as well as a way for me to expand my coding skills. There will be several challenges along the way. 
 
-## **Goals**
-- [ ] Website redesign
+## **TODO**
 - [ ] Secuity update
 	- [ ] Cloudflare integration
 - [ ] Update resume
+- [ ] Add 5 Projects
+- [ ] Launch Website on social media
+
+## **In Progress**
+- [ ] Website redesign
+	- [ ] Add old content back into the new design
+	- [ ] Add new content
 - [ ] Add Link previews
 	- [ ] Facebook
 	- [ ] Twitter
 	- [ ] LinkedIn
-- [ ] Add 5 Projects
-- [ ] Launch Website on social media
 
-## **Completed Goals**
+## **Completed Tasks**
 - [x] Remove old navigation bar animation
 - [x] Add new navigation bar animation
 - [X] Complete Footer
