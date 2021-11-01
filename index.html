@@ -1,93 +1,134 @@
 <!DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<title>Home page for Joseph Fitzgerald's personal portfolio</title>
-		<!-- Favicon -->
-		<link rel="icon" type="image/svg" href="../Photos/JF_logo.svg">
-		<meta charset="UTF-8">
-		<meta name="description" content="Biography, Contact information">
-		<meta name="author" content="Joseph Fitzgerald">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<link rel="stylesheet" href="CSS/index.css">
-		<link rel="stylesheet" href="CSS/title.css">
-		<link rel="stylesheet" href="CSS/footer.css">
-		<link rel="stylesheet" href="CSS/navigation.css">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-		<script>
-			$(function() {
-				$(".toggle").on("click", function() {
-					if ($(".item").hasClass("active")) {
-						$(".item").removeClass("active");
-					} else {
-						$(".item").addClass("active");
-					}
-				});
-			});
-		</script>
-	</head>
+<html lang="en">
 
-	<body>
-		<div class="top-container">
-			<div id="app">
-				<div id="wrapper">
-				<!-- Make sure data-text equals the text you put inside the tags. -->
-					<h1 class="glitch" data-text="Joseph Fitzgerald">Joseph Fitzgerald</h1>
-				</div>
-			</div>
-		</div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biography, Projects, Resume">
+    <meta name="author" content="Joseph Fitzgerald">
+    <meta name="image" property="og:image" content="../Photos/JF_logo.svg">
 
-		<div class="nav-container">
-			<nav>
-				<ul class="menu">
-					<li class="logo"><img src="../Photos/JF_logo.svg" alt="Logo"></li>
-					<li class="item"><a class="active" href="index.html">Home</a></li>
-					<li class="item"><a href="Projects.html">Projects</a></li>
-					<li class="item"><a href="Resume.html">Resume</a></li>
-					<li class="toggle"><span class="bars"></span></li>
-				</ul>
-			</nav>
-		</div>
+    <link rel="icon" type="image/svg" href="../Photos/JF_logo.svg">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/aboutsection.css">
+    <link rel="stylesheet" href="../CSS/projectsection.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../Javascript/navToggle.js" defer></script>
+    <title>Joseph Fitzgerald's Personal Website featuring his projects and resume</title>
+</head>
 
-		<div class="content">
-			<div class="flex-content">
-				<div class="pic-card">
-					<div class="profile-image-container">
-						<img src="../Photos/profile_photo.svg" alt="PofilePicture">
-					</div>
-					<div class="name-title">
-						<p>Joseph Fitzgerald</p>
-						<p>New York, USA</p>
-					</div>
-					<div class="contact-buttons">
-						<a href="https://www.linkedin.com/in/joseph-e-fitzgerald" class="fa fa-linkedin fa-2x"></a>
-						<a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x6a;&#x65;&#x66;&#x69;&#x74;&#x7a;&#x67;&#x65;&#x40;&#x73;&#x79;&#x72;&#x2e;&#x65;&#x64;&#x75;" class="fa fa-envelope fa-2x"></a>
-					</div>
-				</div>
+<body>
+    <div class="body-wrap">
+        <header class="site-header">
+            <nav class="navbar">
+                <img class="logo" src="../Photos/JF_logo.svg" alt="JF_logo">
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#projects-section">Projects</a></li>
+                        <li><a href="#resume-section">Resume</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="site-header-content">
+                <div class="site-header-content-left">
+                    <h1>Welcome to my website!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At velit cumque repellendus corporis
+                        nobis consequuntur sint! Ipsam, sapiente sequi? Harum blanditiis consectetur ea sapiente fugiat
+                        quasi, ducimus nulla velit dignissimos.</p>
+                    <div class="wrap-buttons">
+                        <a href="https://www.linkedin.com/in/joseph-e-fitzgerald" class="main-button">Lets Connect</a>
+                        <a href="#" class="secondary-button">Launch</a>
+                    </div>
+                </div>
+                <div class="site-header-content-right">
 
-				<div class="bio-card">
-					<div class="aboutMe">
-						<p>Hello! Welcome, my name is Joseph Fitzgerald. I'm a graduate of Syracuse University's Computer Engineering program, class of 2020. On my website you will find projects I am currently working on as well as previous works. I created this website to showcase my technical skills and expand my expertise.</p> 
-						<p>This website is a passion project of mine and will be updated regularly so be sure to come back again to see new projects!</p> 
-					</div>
-				</div>
-			</div>
-		</div>
+                </div>
+            </div>
+        </header>
 
-		<footer class="flex-footer">
-			<div class="flex-left">Created by Joseph Fitzgerald</div>
-			<div class="flex-mid">
-				<div class="flex-icons">
-					<a href="https://github.com/jefitzge" class="fa fa-github fa-2x"></a>
-					<a href="https://www.linkedin.com/in/joseph-e-fitzgerald" class="fa fa-linkedin fa-2x"></a>
-<!-- 					<a href="https://www.twitch.tv/fitz_plays" class="fa fa-twitch fa-2x"></a>
-					<a href="https://www.youtube.com/channel/UCHL0YGvqQ8TObNS_kcp6vAQ" class="fa fa-youtube fa-2x"></a> -->
-				</div>
-			</div>
-			<div class="flex-right"><small>&copy; Copyright 2021. All Rights Reserved</small></div>
-		</footer>
+        <main>
+            <section class="about-section" id="about-section">
+                <div class="about-section-left"></div>
+                <div class="about-section-right">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sint sit magni laborum eligendi
+                        modi sequi voluptas dolorum mollitia, minus iste voluptate. Magnam dolorem illo cupiditate, eius
+                        laborum ullam. Consequatur!
+                        Doloribus, nam officiis neque in vel voluptatem, hic maiores sit praesentium aliquid, qui saepe
+                        earum numquam expedita. Reprehenderit iusto voluptatibus atque expedita? Vero totam
+                        reprehenderit consequuntur amet doloribus non molestiae?<br><br>Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Vero error accusamus itaque adipisci delectus eveniet autem
+                        dolores at. Perspiciatis corrupti, ipsa suscipit nostrum est nulla ea fuga tenetur sapiente
+                        quae. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aliquam iure,
+                        sapiente porro ut praesentium. Et maxime ea labore, quasi atque doloribus, omnis est commodi
+                        tenetur temporibus porro voluptatem nam.</p>
+                </div>
+            </section>
+            <section class="projects-section" id="projects-section">
+                <div class="project-container">
+                    <div class="cards">
+                        <h1>Title</h1>
+                        <h4>Sub Title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorem, quis aut molestias
+                            amet sed ea ipsum illo consequatur tempore perferendis. Recusandae nobis incidunt soluta eum
+                            aspernatur sapiente vel sed?</p>
+                    </div>
+                    <div class="cards">
+                        <h1>Title</h1>
+                        <h4>Sub Title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, molestias ex voluptatibus ad
+                            expedita iure quod! Pariatur, optio similique. Ut adipisci hic veritatis sint voluptatum?
+                            Porro, suscipit? Assumenda, quisquam doloremque?</p>
+                    </div>
+                    <div class="cards">
+                        <h1>Title</h1>
+                        <h4>Sub Title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, molestias ex voluptatibus ad
+                            expedita iure quod! Pariatur, optio similique. Ut adipisci hic veritatis sint voluptatum?
+                            Porro, suscipit? Assumenda, quisquam doloremque?</p>
+                    </div>
+                    <div class="cards">
+                        <h1>Title</h1>
+                        <h4>Sub Title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ab! Explicabo impedit
+                            provident quis commodi placeat incidunt, veniam nobis facere accusamus est ab fugiat omnis
+                            ut voluptatibus quas id voluptatum.</p>
+                    </div>
+                    <div class="cards">
+                        <h1>Title</h1>
+                        <h4>Sub Title</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facere dolore, a mollitia
+                            cupiditate minima magni hic laboriosam id ut, eligendi iure. Aliquam quisquam, corporis
+                            libero atque voluptatibus illo qui?</p>
+                    </div>
+                </div>
+            </section>
+            <section class="resume-section" id="resume-section">
+                <p>Resume Section</p>
+            </section>
+        </main>
+        <div class="before-site-footer"></div>
+        <footer class="site-footer">
+            <div class="site-footer-left">Created by Joseph Fitzgerald</div>
+            <div class="site-footer-mid">
+                <a href="https://github.com/jefitzge" class="fa fa-github fa-2x"></a>
+                <a href="https://www.linkedin.com/in/joseph-e-fitzgerald" class="fa fa-linkedin fa-2x"></a>
+            </div>
+            <div class="site-footer-right">
+                <small>&copy; Copyright 2021. All Rights Reserved</small>
+            </div>
+        </footer>
+    </div>
+</body>
 
-	</body>
 </html>

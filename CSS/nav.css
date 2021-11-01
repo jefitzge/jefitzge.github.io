@@ -1,0 +1,115 @@
+.navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    border-bottom-right-radius: 1.5rem;
+	border-bottom-left-radius: 1.5rem;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.navbar-links li{
+    list-style-type: none;
+}
+
+.navbar-links li a:hover{
+    color: #02d769;
+    /* color: #1c2325; */
+    /* background-color: #35a8d6;
+    border-radius: 2.25rem; */
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 1.5rem;
+    right: 10%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Mobile screen */
+@media (max-width: 768px){
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+        /* To have the menu float over the section site-header */
+        background: #1D2026;
+        border-bottom: solid 4px black;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .navbar-links li{
+        position: relative;
+        text-align: center;
+    }
+
+    .navbar-links li a{
+        font-size: 1.25rem;
+        padding: .5rem 1.25rem;
+    }
+    .navbar-links li a:hover{
+        color: #02d769;
+    }
+
+    .navbar.active{
+        /* remvoves gap when menu is disaplyed */
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background: #1D2026;
+    }
+    .navbar-links.active{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        display: inline;
+    }
+}
+

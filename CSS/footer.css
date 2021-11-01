@@ -1,48 +1,42 @@
-.flex-footer {
-	display: flex;
-	flex-direction: row;
-	font-size: 20px;
-	text-align: center;
-	border-top: 2px solid white;
+.before-site-footer{
+    background-image: url("../Photos/wave-haikei.svg");
+    height: 250px;
+    width: 100%;
 }
 
-.flex-left {
-	background-color: #040404;
-	color: white;
-	padding: 10px;
-	flex: 25%;
+
+.site-footer{
+    background: #20232b;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-.flex-mid {
-	background-color: #040404;
-	padding: 10px;
-	flex: 50%;
+.site-footer a{
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
-.flex-right {
-	background-color: #040404;
-	color: white;
-	padding: 10px;
-	flex: 25%;
+.site-footer a:hover{
+    color: #02d769;
 }
 
-.flex-icons{
-	padding: 2px;
-}
-
-.flex-icons a{
-	color: white;
-	text-decoration: none;
-	padding-left: 4px;
-	padding-right: 4px;
-}
-
-.flex-icons a:hover{
-	color: #dc2051;
-}
-
-@media (max-width: 800px){
-	.flex-footer{
-		flex-direction: column;
-	}
+/* Mobile screen */
+@media (max-width: 768px){
+    .site-footer{
+        flex-direction: column;
+    }
+    .site-footer-mid{
+        padding-top: 1rem;
+    }
+    .site-footer-right{
+        padding-top: 1rem;
+    }
 }

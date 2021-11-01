@@ -1,97 +1,37 @@
-html, body{
-	height: 100%;
-	font-family: 'Roboto', sans-serif;
-	background-color: black;
-	/* This stops an issue on mobile where the glitch title causes mobile screens to have a horizontal scrollbar that flickers*/
-	overflow-x: hidden;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    min-height: 100%;
+    font-size: 16px;
+    font-family: "IBM Plex Sans", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body{
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
+    background: #1D2026;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-.top-container{
-	background: black;
-	background: url("../Photos/52f61nfzmwl51.jpg") no-repeat center;
-	background-size: cover;
-	text-align: center;
-	min-height: 100%;
+.body-wrap{
+    max-width: 1980px;
 }
 
-.content{
-	flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(67,75,156,1) 65%, #7a799d 100%);
+.resume-section{
+    height: 100vh;
+    background: #1d2026 ;
 }
 
-/*This ccontainer holds flex items*/
-.flex-content{
-	display: flex;
-	flex-direction: row;
-	margin: 30px;
-	padding: 20px;
-	font-size: 20px;
-	text-align: center;
-	border-radius: 5px;
-	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-	background: rgba(0, 0, 0, 0.5);
-	color: white;
-	gap: 3rem;
-}
-
-/*Styles the Picture card that holds the profile image, title and contact buttons*/
-.pic-card{
-	margin: 10px;
-	padding: 5px;
-	width: 100%;  								/*<-----------------ATTENTION-----------ATTENTION-----------ATTENTION-----------Look into changing this*/
-	/*Stops profile picture from going outside the div*/
-	overflow: hidden;
-	/*To help align elements*/
-	display: flex;
-	/*to align the elements in the card to be in a column*/
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.profile-image-container > img{
-	height: auto;
-	max-width: 100%;
-	border-radius: 5px;
-}
-
-.contact-buttons a{
-	color: white;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-decoration: none;
-}
-.contact-buttons a:hover{
-	color: #d1094e;
-}
-
-.bio-card{
-	margin: 10px;
-	display: flex;
-	/*to align the elements in the card to be in a column*/
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.aboutMe p{
-	color: white;
-    padding: 5px;
-	margin: 0;
-	font-family: 'Roboto', sans-serif;
-	font-size: clamp(1rem, 0.8077rem + 1.0256vw, 1.6rem); /*<-----------------ATTENTION-----------ATTENTION-----------ATTENTION-----------Look into changing this*/
-}
-
-@media (max-width: 800px){
-	.flex-content{
-		flex-direction: column;
-		align-items: center;
-	}
+@media (max-width: 768px){
+    *{
+        font-size: 14px;
+    }
 }

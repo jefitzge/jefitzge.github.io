@@ -1,0 +1,45 @@
+.projects-section{
+    min-height: 100vh;
+    background: #1d2026;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 32.5px 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+.project-container{
+    height: 100%;
+    /* border: solid red 2px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cards{
+    margin: 1.5rem;
+    height: 15rem;
+    width: 25rem;
+    flex: 0 1 auto;
+}
+
+.cards h1{
+    font-size: 1.75rem;
+    margin-bottom: .5rem;
+}
+.cards h4{
+    font-weight: lighter;
+}
+.cards p{
+    color: #8A94A7;
+    line-height: 2rem;
+    margin-top: .5rem;;
+}
+
+@media (max-width: 768px){
+    .cards{
+        margin: .9rem;
+    }
+}
