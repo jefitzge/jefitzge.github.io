@@ -7,10 +7,9 @@ This website will become a portfolio of all my works as well as a way for me to 
 	- [ ] Cloudflare integration
 - [ ] Update resume
 - [ ] Add Link previews
-	-[ ] Facebook
-	-[ ] Twitter
-	-[ ] LinkedIn
-
+	- [ ] Facebook
+	- [ ] Twitter
+	- [ ] LinkedIn
 - [ ] Add 5 Projects
 - [ ] Launch Website on social media
 
