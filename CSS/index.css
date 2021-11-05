@@ -36,7 +36,7 @@ body{
     right: 40px;
     width: 60px;
     height: 60px;
-    background: #01bf5d url("../Photos/up-arrow.png");
+    background: white url("../Photos/up-arrow.png");
     background-size: 60px;
     background-position: center;
     background-repeat: no-repeat;
