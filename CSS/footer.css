@@ -27,7 +27,7 @@
 .site-footer a:hover{
     color: #02d769;
     transition: all ease .3s;
-    transform: translateY(-10px);
+    transform: translateY(-2px);
 }
 
 /* Mobile screen */
