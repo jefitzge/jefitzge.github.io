@@ -21,8 +21,9 @@
 }
 .about-section-right p{
     color: #8A94A7;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 2rem;
+    text-indent: 1rem;
     padding: 1rem;
     max-width: 670px;
 }
