@@ -55,6 +55,25 @@
     width: 100%;
     background-color: white;
     border-radius: 10px;
+    transition: all 0.5s ease-out;
+}
+
+.navbar.active .toggle-button .bar:nth-child(1){
+    -webkit-transform: rotate(45deg) translate(7px, 5px);
+    -moz-transform: rotate(45deg) translate(7px, 5px);
+    -o-transform: rotate(45deg) translate(7px, 5px);
+    transform: rotate(45deg) translate(7px, 5px);
+    transition: all 0.5s ease-out;
+}
+.navbar.active .toggle-button .bar:nth-child(2){
+    opacity: 0;
+}
+.navbar.active .toggle-button .bar:nth-child(3){
+    -webkit-transform: rotate(-45deg) translate(7px, 5px);
+    -moz-transform: rotate(-45deg) translate(7px, 5px);
+    -o-transform: rotate(-45deg) translate(7px, 5px);
+    transform: rotate(-45deg) translate(7px, -6px);
+    transition: all 0.5s ease-out;
 }
 
 /* Mobile screen */
