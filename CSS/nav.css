@@ -126,8 +126,8 @@
         background: #1D2026;
     }
     .navbar-links.active{
-        padding-top: .5rem;
-        padding-bottom: .5rem;
+        /* padding-top: .5rem;
+        padding-bottom: .5rem; */
         display: inline;
     }
 }

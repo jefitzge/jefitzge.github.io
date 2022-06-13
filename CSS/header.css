@@ -44,8 +44,8 @@
 .main-button{
     background: linear-gradient(65deg, #0270D7 0, #02d769 100%);
     color: white;
-    -webkit-animation: main-button-animate 0.9s both;
-	        animation: main-button-animate 0.9s both;
+    -webkit-animation: main-button-animate 1s both;
+	        animation: main-button-animate 1s both;
     /* border-radius: 1.5rem; */
 }
 @-webkit-keyframes main-button-animate {
