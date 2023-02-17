@@ -384,7 +384,7 @@ input:checked + .slider:before {
   flex-direction: column;
   align-items: center;
   width: 512px;
-  height: 512px;
+  height: 256px;
   /* outline: red solid 1px; */
 }
 
