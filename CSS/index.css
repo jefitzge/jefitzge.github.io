@@ -64,6 +64,17 @@ main {
   margin-right: 10%;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* border: 1px solid red; */
+}
+section {
+  height: auto !important;
+  /* border: 1px solid green; */
+}
+
 /* Stlye navbar container */
 .navbar {
   height: 3.75rem;
@@ -384,7 +395,8 @@ input:checked + .slider:before {
   flex-direction: column;
   align-items: center;
   width: 512px;
-  height: 256px;
+  height: fit-content;
+  max-height: 512px;
   /* outline: red solid 1px; */
 }
 
@@ -503,6 +515,15 @@ input:checked + .slider:before {
   .about-section-left {
     width: 100%;
     padding: 0;
+  }
+  .site-footer {
+    flex-direction: column;
+  }
+  .site-footer-mid {
+    padding-top: 1rem;
+  }
+  .site-footer-right {
+    padding-top: 1rem;
   }
 
   /* TODO: Make nav links full width */
