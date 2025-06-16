@@ -134,7 +134,7 @@ section {
 .navbar-menu .menu-item a:hover {
   background-color: var(--text-hover-light);
   color: var(--text-secondary);
-  border-radius: 25px;
+  /* border-radius: 25px; */
 }
 
 .navbar-menu .menu-item:hover .dropdown-menu {
@@ -411,8 +411,8 @@ input:checked + .slider:before {
   max-height: 512px;
   /* outline: red solid 1px; */
   transition: .5s ease-out;
-  border-radius: 25px;
-  padding: 5px;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .card:hover{
