@@ -134,6 +134,7 @@ section {
 .navbar-menu .menu-item a:hover {
   background-color: var(--text-hover-light);
   color: var(--text-secondary);
+  border-radius: 25px;
 }
 
 .navbar-menu .menu-item:hover .dropdown-menu {
@@ -254,7 +255,18 @@ input:checked + .slider:before {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
   /* border: 1px solid red; */
+}
+.intro-headline{
+  color: var(--button-primary);
+}
+.headline{
+  fill: var(--button-text-primary);
+  font: inherit;
+  font-size: 3rem;
 }
 
 /* .intro-section-left{
@@ -398,6 +410,14 @@ input:checked + .slider:before {
   height: fit-content;
   max-height: 512px;
   /* outline: red solid 1px; */
+  transition: .5s ease-out;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.card:hover{
+  box-shadow: 0px 0px 25px 2px var(--text-secondary);
+  background-color: var(--bg-secondary);
 }
 
 .badge-wrapper {
@@ -511,7 +531,9 @@ input:checked + .slider:before {
     top: 5.75rem;
     left: 0;
   }
-
+  .intro-section{
+    padding: 0;
+  }
   .about-section-left {
     width: 100%;
     padding: 0;
