@@ -18,7 +18,6 @@
   --button-primary-hover: #cd3046;
   --button-text-primary: #fff;
 }
-
 [data-theme="dark"] {
   --text-primary: #c4c5c7;
   --text-secondary: #cd3046;
