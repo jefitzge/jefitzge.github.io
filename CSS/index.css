@@ -62,6 +62,8 @@ header,
 main {
   /* margin-left: 10%;
   margin-right: 10%; */
+  padding-left:10%;
+  padding-right:10%;
   margin-inline: auto;
   max-width: 90rem;
 }
@@ -80,7 +82,7 @@ section {
 
 /* Stlye navbar container */
 .navbar {
-  height: 3.75rem;
+  height: 2rem;
   background-color: var(--bg-menu-primary);
   display: flex;
   flex-direction: row;
@@ -272,13 +274,12 @@ input:checked + .slider:before {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
   /* border: 1px solid red; */
 }
 .intro-headline{
-  color: var(--button-primary);
+  color: var(--text-primary);
 }
 .headline{
   fill: var(--button-text-primary);
@@ -411,7 +412,7 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
+  /* align-items: center; */
   gap: 1.5rem;
   flex-wrap: wrap;
   /* outline: white solid 1px; */
