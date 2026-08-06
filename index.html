@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Biography, Projects, Resume" />
     <meta name="author" content="Joseph Fitzgerald" />
-    <meta name="image" property="og:image" content="assest/svg/JF_logo.svg"/>
+    <meta name="image" property="og:image" content="assest/svg/JF_logo.svg" />
     <link rel="icon" type="image/svg" href="assets/svg/JF_logo.svg">
-    <link rel="stylesheet" href="CSS/index.css"/>
+    <link rel="stylesheet" href="CSS/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Roboto&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script defer src="JS/index.js"></script>
     <title>Joseph Fitzgerald's Personal Website featuring his projects</title>
@@ -53,10 +54,19 @@
             </li>
             <!-- <li class="menu-item"><a href="#resume-section">Resume</a></li> -->
             <!-- Theme Toggle -->
-            <li class="menu-item">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <span class="slider"></span>
+            <li class="menu-item" style="padding-top: 5px;">
+                <label class="theme-switch" aria-label="Toggle theme">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="theme-icon">
+                        <svg class="icon icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path>
+                        </svg>
+                        <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path>
+                        </svg>
+                    </span>
                 </label>
             </li>
         </ul>
@@ -109,7 +119,7 @@
             <!-- <div class="about-section-right">
             </div> -->
         </section>
-        
+
         <section class="projects-section" id="projects-section">
             <div class="card-group">
                 <div class="card">
@@ -123,7 +133,9 @@
                                 href="https://github.com/jefitzge/Electronic-Drum-Sticks">Repo</a></span>
                     </div>
                     <p>
-                        Senior Design Project for Syracuse University which allows users to simulate playing traditional drums with 3D printed sticks containing hardware capable of caputring user movement and then sending this information to a server located on a users PC or Laptop to output a sound.
+                        Senior Design Project for Syracuse University which allows users to simulate playing traditional
+                        drums with 3D printed sticks containing hardware capable of caputring user movement and then
+                        sending this information to a server located on a users PC or Laptop to output a sound.
                     </p>
                 </div>
                 <div class="card">
@@ -135,7 +147,8 @@
                         <span class="badge link hover-underline-animation"><a href="#">Repo</a></span>
                     </div>
                     <p>
-                        This is an ever evolving project built and hosted on Github Pages. This website utilizes Vanilla HTML, CSS and JS to create the webpage you are currently viewing!
+                        This is an ever evolving project built and hosted on Github Pages. This website utilizes Vanilla
+                        HTML, CSS and JS to create the webpage you are currently viewing!
                     </p>
                 </div>
                 <div class="card">
@@ -144,10 +157,12 @@
                         <span class="badge">C#</span>
                         <!-- <span class="badge">Hardware</span> -->
                         <!-- <span class="badge link hover-underline-animation"><a href="#">Demo</a></span> -->
-                        <span class="badge link hover-underline-animation"><a href="https://github.com/jefitzge/UDP-Client-Server">Repo</a></span>
+                        <span class="badge link hover-underline-animation"><a
+                                href="https://github.com/jefitzge/UDP-Client-Server">Repo</a></span>
                     </div>
                     <p>
-                        This is a simple C# UDP Peer to Peer client server application to demonstarte the UDP communication protocal used by computer networks.
+                        This is a simple C# UDP Peer to Peer client server application to demonstarte the UDP
+                        communication protocal used by computer networks.
                     </p>
                 </div>
                 <div class="card">
@@ -156,7 +171,8 @@
                         <span class="badge">C#</span>
                         <!-- <span class="badge">Hardware</span> -->
                         <!-- <span class="badge link hover-underline-animation"><a href="#">Demo</a></span> -->
-                        <span class="badge link hover-underline-animation"><a href="https://github.com/jefitzge/Brick-Breaker">Repo</a></span>
+                        <span class="badge link hover-underline-animation"><a
+                                href="https://github.com/jefitzge/Brick-Breaker">Repo</a></span>
                     </div>
                     <p>
                         The classic brick breaker game built in C#.
@@ -180,10 +196,12 @@
                         <span class="badge">C++</span>
                         <!-- <span class="badge">Hardware</span> -->
                         <!-- <span class="badge link hover-underline-animation"><a href="#">Demo</a></span> -->
-                        <span class="badge link hover-underline-animation"><a href="https://github.com/jefitzge/C-Plus-Plus">Repo</a></span>
+                        <span class="badge link hover-underline-animation"><a
+                                href="https://github.com/jefitzge/C-Plus-Plus">Repo</a></span>
                     </div>
                     <p>
-                        This is a collection of small C++ programs that demonstrate the fundmental concepts of the C++ language. 
+                        This is a collection of small C++ programs that demonstrate the fundmental concepts of the C++
+                        language.
                     </p>
                 </div>
                 <div class="card">
@@ -204,7 +222,7 @@
                         <!-- <span class="badge">Hardware</span> -->
                         <!-- <span class="badge link hover-underline-animation"><a href="#">Demo</a></span>
                         <span class="badge link hover-underline-animation"><a href="#">Repo</a></span>-->
-                    </div> 
+                    </div>
                     <p>
                         Coming soon...
                     </p>
