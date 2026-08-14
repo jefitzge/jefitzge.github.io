@@ -79,9 +79,7 @@ body {
   margin: 0;
   color: var(--foreground);
   background-color: var(--background);
-  display: flex;
   min-height: 100vh;
-  flex-direction: column;
 }
 
 main {
