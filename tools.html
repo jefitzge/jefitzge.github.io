@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Biography, Projects, Resume" />
+    <meta name="author" content="Joseph Fitzgerald" />
+    <meta name="image" property="og:image" content="assest/svg/JF_logo.svg" />
+    <link rel="icon" type="image/svg" href="assets/svg/JF_logo.svg">
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Roboto&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script defer src="JS/index.js"></script>
+    <title>Joseph Fitzgerald's Personal Website</title>
+</head>
+
+<body>
+    <!-- START Main Navigation -->
+    <nav class="navbar">
+        <!-- Site Logo -->
+        <img style="width: 50px; height: 50px; border-radius: 50%" class="logo" src="assets/svg/JF_logo.svg"
+            alt="Site logo" />
+        <!-- Menu Toggle for smaller screens -->
+        <input id="menu-toggle" class="menu-toggle" type="checkbox" style="display: none" />
+        <label for="menu-toggle" class="menu-toggle">
+            <span class="hamburger">
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </span>
+        </label>
+        <!-- Main Menu-->
+        <ul class="navbar-menu">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="index.html#about-section">About</a></li>
+            <li class="menu-item">
+                <a href="index.html#projects-section">Projects<span class="dropdown-caret"></span></a>
+                <!-- Submenu -->
+                <ul class="dropdown-menu">
+                    <li class="menu-item"><a href="#">Electronic Drum Sticks</a></li>
+                    <li class="menu-item"><a href="#">Personal Website</a></li>
+                    <li class="menu-item"><a href="#">UDP Client Server</a></li>
+                    <li class="menu-item"><a href="#">Brick Breaker</a></li>
+                    <li class="menu-item"><a href="#">Spotify Song Data Visualizer</a></li>
+                    <li class="menu-item"><a href="#">C++ Projects</a></li>
+                    <li class="menu-item"><a href="#">Java Projects</a></li>
+                    <li class="menu-item"><a href="#">Rust Projects</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="tools.html">Tools</a></li>
+            <!-- <li class="menu-item"><a href="#resume-section">Resume</a></li> -->
+            <!-- Theme Toggle -->
+            <li class="menu-item" style="padding-top: 5px; padding-left:1rem;">
+                <label class="theme-switch" aria-label="Toggle theme">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="theme-icon">
+                        <svg class="icon icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path d="M12 2v2"></path>
+                            <path d="M12 20v2"></path>
+                            <path d="m4.93 4.93 1.41 1.41"></path>
+                            <path d="m17.66 17.66 1.41 1.41"></path>
+                            <path d="M2 12h2"></path>
+                            <path d="M20 12h2"></path>
+                            <path d="m6.34 17.66-1.41 1.41"></path>
+                            <path d="m19.07 4.93-1.41 1.41"></path>
+                        </svg>
+                        <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path
+                                d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401">
+                            </path>
+                        </svg>
+                    </span>
+                </label>
+            </li>
+        </ul>
+
+    </nav>
+    <!-- END Main Navigation -->
+    <!-- START Main Content -->
+    <main>
+        <div
+            style="max-width: 480px;margin: 60px auto;padding: 40px 32px;background: var(--card);color: var(--card-foreground);border: 1px solid var(--border);border-radius: var(--radius);box-shadow: var(--shadow-lg);text-align: center;font-family: 'Roboto', sans-serif;">
+            <div
+                style="width: 56px;height: 56px;margin: 0 auto 20px;border-radius: 50%;background: var(--secondary);display: flex;align-items: center;justify-content: center;">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h2
+                style="margin: 0 0 8px;font-size: 22px;font-weight: 700;color: var(--foreground);letter-spacing: -0.01em;">
+                Under Construction</h2>
+            <p style="margin: 0 0 24px;font-size: 15px;line-height: 1.5;color: var(--muted-foreground);">This page is
+                currently being built.<br>Check back soon for updates.</p>
+            <div
+                style="text-align: left;background: var(--muted);border: 1px solid var(--border);border-radius: var(--radius);padding: 14px 16px;font-family: 'Courier New',monospace;font-size: 13px;color: var(--foreground);">
+                <span style="color: var(--primary);">$</span> working...<span
+                    style="display: inline-block;width: 8px;height: 15px;background: var(--primary);margin-left: 4px;vertical-align: text-bottom;animation: uc-blink 1s steps(1) infinite;"></span>
+            </div>
+        </div>
+        <style>
+            @keyframes uc-blink {
+
+                0%,
+                49% {
+                    opacity: 1;
+                }
+
+                50%,
+                100% {
+                    opacity: 0;
+                }
+            }
+        </style>
+
+        <section style="display: none;" class="tools-section" id="tools-section">
+            <ul class="tool-list" id="tool-list">
+                <li><a href="http://jigsaw.w3.org/css-validator/">CSS Validator</a></li>
+                <li><a href="https://dbdiagram.io/home">DB Diagram Editor</a></li>
+                <li><a href="https://thedesignsystem.guide/resources">Design System Guide</a></li>
+                <li><a href="https://mycolor.space/">Color Space</a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </section>
+    </main>
+    <!-- END Main Content -->
+    <footer class="site-footer">
+        <div class="site-footer-left">Created by Joseph Fitzgerald</div>
+        <div class="site-footer-mid">
+            <a href="https://github.com/jefitzge" class="fa fa-github fa-2x"></a>
+            <a href="https://www.linkedin.com/in/joseph-e-fitzgerald" class="fa fa-linkedin fa-2x"></a>
+        </div>
+        <div class="site-footer-right">
+            <small>&copy; Copyright 2026. All Rights Reserved</small>
+        </div>
+    </footer>
+</body>
+
+</html>
