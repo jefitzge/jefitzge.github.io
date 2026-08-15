@@ -9,13 +9,12 @@
     <meta name="author" content="Joseph Fitzgerald" />
     <meta name="image" property="og:image" content="assest/svg/JF_logo.svg" />
     <link rel="icon" type="image/svg" href="assets/svg/JF_logo.svg">
-    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Roboto&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script defer src="JS/index.js"></script>
+    <script defer src="assets/js/index.js"></script>
     <title>Joseph Fitzgerald's Personal Website</title>
 </head>
 
@@ -52,7 +51,7 @@
                     <li class="menu-item"><a href="#">Rust Projects</a></li>
                 </ul>
             </li>
-            <li class="menu-item"><a href="tools.html">Tools</a></li>
+            <li class="menu-item"><a href="./pages/tools.html">Tools</a></li>
             <!-- <li class="menu-item"><a href="#resume-section">Resume</a></li> -->
             <!-- Theme Toggle -->
             <li class="menu-item" style="padding-top: 5px; padding-left:1rem;">
@@ -61,11 +60,23 @@
                     <span class="theme-icon">
                         <svg class="icon icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path>
+                            aria-hidden="true">
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <path d="M12 2v2"></path>
+                            <path d="M12 20v2"></path>
+                            <path d="m4.93 4.93 1.41 1.41"></path>
+                            <path d="m17.66 17.66 1.41 1.41"></path>
+                            <path d="M2 12h2"></path>
+                            <path d="M20 12h2"></path>
+                            <path d="m6.34 17.66-1.41 1.41"></path>
+                            <path d="m19.07 4.93-1.41 1.41"></path>
                         </svg>
                         <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path>
+                            aria-hidden="true">
+                            <path
+                                d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401">
+                            </path>
                         </svg>
                     </span>
                 </label>
@@ -134,16 +145,20 @@
                                 href="https://github.com/jefitzge/Electronic-Drum-Sticks">Repo</a></span>
                     </div>
                     <div class="card-text">
-                    <p>
-                        Senior Design Project for Syracuse University which allows users to simulate playing traditional
-                        drums with 3D printed sticks containing hardware capable of caputring user movement and then
-                        sending this information to a server located on a users PC or Laptop to output a sound. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptates similique rerum aspernatur reiciendis autem facere molestias dolorum illum provident, at sapiente earum fugit minima iusto, unde animi. Exercitationem, quis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, debitis cum nesciunt in voluptates repellendus laudantium itaque iure perferendis maiores aut repudiandae deserunt. Officiis asperiores voluptatibus adipisci quo fugiat debitis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae minima consequatur nesciunt vitae, ullam nulla quibusdam mollitia velit quidem magni labore dignissimos amet omnis laudantium neque? Quam repellat veniam est!
-                    </p>
-                    
+                        <p>
+                            Senior Design Project for Syracuse University which allows users to simulate playing
+                            traditional
+                            drums with 3D printed sticks containing hardware capable of caputring user movement and then
+                            sending this information to a server located on a users PC or Laptop to output a sound.
+                        </p>
+
                     </div>
                     <button class="expand-btn" type="button" aria-label="Expand card">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-  </button>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
                 </div>
                 <div class="card">
                     <h2>Personal Webstite</h2>
@@ -154,15 +169,19 @@
                         <span class="badge link hover-underline-animation"><a href="#">Repo</a></span>
                     </div>
                     <div class="card-text">
-                    <p>
-                        This is an ever evolving project built and hosted on Github Pages. This website utilizes Vanilla
-                        HTML, CSS and JS to create the webpage you are currently viewing!
-                    </p>
-                    
+                        <p>
+                            This is an ever evolving project built and hosted on Github Pages. This website utilizes
+                            Vanilla
+                            HTML, CSS and JS to create the webpage you are currently viewing!
+                        </p>
+
                     </div>
                     <button class="expand-btn" type="button" aria-label="Expand card">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-  </button>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
                 </div>
                 <div class="card">
                     <h2>UDP Client Server</h2>
@@ -174,15 +193,18 @@
                                 href="https://github.com/jefitzge/UDP-Client-Server">Repo</a></span>
                     </div>
                     <div class="card-text">
-                    <p>
-                        This is a simple C# UDP Peer to Peer client server application to demonstarte the UDP
-                        communication protocal used by computer networks.
-                    </p>
-                    
+                        <p>
+                            This is a simple C# UDP Peer to Peer client server application to demonstarte the UDP
+                            communication protocal used by computer networks.
+                        </p>
+
                     </div>
                     <button class="expand-btn" type="button" aria-label="Expand card">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-  </button>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
                 </div>
                 <div class="card">
                     <h2>Brick Breaker</h2>
@@ -194,14 +216,17 @@
                                 href="https://github.com/jefitzge/Brick-Breaker">Repo</a></span>
                     </div>
                     <div class="card-text">
-                    <p>
-                        The classic brick breaker game built in C#.
-                    </p>
-                    
+                        <p>
+                            The classic brick breaker game built in C#.
+                        </p>
+
                     </div>
                     <button class="expand-btn" type="button" aria-label="Expand card">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-  </button>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
                 </div>
                 <div class="card">
                     <h2>Spotify Song Data Visualizer</h2>
@@ -212,14 +237,17 @@
                         <span class="badge link hover-underline-animation"><a href="#">Repo</a></span> -->
                     </div>
                     <div class="card-text">
-                    <p>
-                        Coming soon...
-                    </p>
-                    
+                        <p>
+                            Coming soon...
+                        </p>
+
                     </div>
                     <button class="expand-btn" type="button" aria-label="Expand card">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-  </button>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
                 </div>
                 <div class="card">
                     <h2>C++ Projects</h2>
@@ -231,15 +259,19 @@
                                 href="https://github.com/jefitzge/C-Plus-Plus">Repo</a></span>
                     </div>
                     <div class="card-text">
-                    <p>
-                        This is a collection of small C++ programs that demonstrate the fundmental concepts of the C++
-                        language.
-                    </p>
-                    
+                        <p>
+                            This is a collection of small C++ programs that demonstrate the fundmental concepts of the
+                            C++
+                            language.
+                        </p>
+
                     </div>
                     <button class="expand-btn" type="button" aria-label="Expand card">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-  </button>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
                 </div>
                 <div class="card">
                     <h2>Java Projects</h2>
@@ -249,14 +281,17 @@
                         <span class="badge link hover-underline-animation"><a href="#">Repo</a></span> -->
                     </div>
                     <div class="card-text">
-                    <p>
-                        Coming soon...
-                    </p>
-                    
+                        <p>
+                            Coming soon...
+                        </p>
+
                     </div>
                     <button class="expand-btn" type="button" aria-label="Expand card">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-  </button>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
                 </div>
                 <div class="card">
                     <h2>Rust Projects</h2>
@@ -267,14 +302,17 @@
                         <span class="badge link hover-underline-animation"><a href="#">Repo</a></span>-->
                     </div>
                     <div class="card-text">
-                    <p>
-                        Coming soon...
-                    </p>
-                    
+                        <p>
+                            Coming soon...
+                        </p>
+
                     </div>
                     <button class="expand-btn" type="button" aria-label="Expand card">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-  </button>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
