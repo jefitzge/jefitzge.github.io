@@ -1,3 +1,5 @@
+"use strict";
+
 const toggleSwitch = document.querySelector("#theme-toggle");
 
 // Load saved theme
@@ -14,7 +16,7 @@ toggleSwitch.addEventListener("change", () => {
     localStorage.setItem("theme", theme);
 });
 
-
+// Auto-adjust card heights
 document.querySelectorAll('.card').forEach((card) => {
   const textEl = card.querySelector('.card-text p');
   const wrapEl = card.querySelector('.card-text');
