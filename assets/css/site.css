@@ -1,0 +1,547 @@
+/* Design tokens: colors, radius, shadows (light + dark) */
+:root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 1980px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.25 0.053 269);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.25 0.053 269);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.25 0.053 269);
+  --primary: oklch(0.547 0.176 269);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.955 0.018 269);
+  --secondary-foreground: oklch(0.25 0.088 269);
+  --muted: oklch(0.97 0.004 269);
+  --muted-foreground: oklch(0.52 0.035 269);
+  --accent: oklch(0.965 0.005 269);
+  --accent-foreground: oklch(0.25 0.053 269);
+  --destructive: oklch(0.584 0.239 28.5);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.925 0.009 269);
+  --input: oklch(0.925 0.009 269);
+  --ring: oklch(0.547 0.176 269 / 0.9);
+  --radius: 0.75rem;
+  --shadow-2xs: 0 1px 0 0 oklch(0.55 0.026 269 / 0.05);
+  --shadow-xs: 0 1px 2px 0 oklch(0.55 0.026 269 / 0.05);
+  --shadow-sm: 0 1px 3px 0 oklch(0.55 0.026 269 / 0.1), 0 1px 2px -1px oklch(0.55 0.026 269 / 0.1);
+  --shadow-md: 0 4px 6px -1px oklch(0.55 0.026 269 / 0.1), 0 2px 4px -2px oklch(0.55 0.026 269 / 0.1);
+  --shadow-lg: 0 10px 15px -3px oklch(0.55 0.026 269 / 0.1), 0 4px 6px -4px oklch(0.55 0.026 269 / 0.1);
+  --shadow-xl: 0 20px 25px -5px oklch(0 0 0 / 0.1), 0 8px 10px -6px oklch(0.55 0.026 269 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px oklch(0.55 0.026 269 / 0.15);
+}
+
+[data-theme="dark"] {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 1980px;
+  font-size: 16px;
+  --background: oklch(0.15 0.018 269);
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.17 0.018 269);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.18 0.018 269);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.547 0.176 269);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.627 0.176 269 / 0.25);
+  --secondary-foreground: oklch(0.9 0.176 269);
+  --muted: oklch(0.25 0.012 269);
+  --muted-foreground: oklch(0.75 0.026 269);
+  --accent: oklch(0.38 0.018 269);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.69 0.2 23.9);
+  --destructive-foreground: oklch(0 0 0);
+  --border: oklch(0.29 0.012 269);
+  --input: oklch(0.29 0.012 269);
+  --ring: oklch(0.627 0.176 269);
+  --shadow-2xs: 0 1px 3px 0 hsl(0 0% 0% / 0.05);
+  --shadow-xs: 0 1px 3px 0 hsl(0 0% 0% / 0.05);
+  --shadow-sm: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+  --shadow-md: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
+  --shadow-lg: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
+  --shadow-xl: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 8px 10px -1px hsl(0 0% 0% / 0.1);
+  --shadow-2xl: 0 1px 3px 0 hsl(0 0% 0% / 0.25);
+}
+
+/* === base/base.css === */
+/* Base: page-level element styles */
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--foreground);
+  background-color: var(--background);
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* TODO: Update/remove this */
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  line-height: 32px;
+}
+
+header,
+main {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-inline: auto;
+  max-width: 90rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 10px;
+}
+
+section {
+  height: auto !important;
+}
+
+html,
+body {
+  scroll-padding-top: 5rem;
+}
+
+/* === components/nav.css === */
+/* Navigation */
+.navbar {
+  --nav-h: 4rem;
+  --nav-gutter: 10%;              
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: var(--nav-h);
+  padding-inline: var(--nav-gutter);
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border);
+}
+
+.logo-link {
+  display: inline-flex;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.logo-link:focus-visible,
+.navbar a:focus-visible,
+.navbar button:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* ---------- Hamburger button ---------- */
+.nav-toggle {
+  display: inline-grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nav-toggle:hover {
+  background: var(--muted);
+}
+
+.nav-toggle__bar,
+.nav-toggle__bar::before,
+.nav-toggle__bar::after {
+  display: block;
+  width: 1.25rem;
+  height: 2px;
+  background: var(--primary);
+  border-radius: 2px;
+  transition: transform 0.3s ease, top 0.3s ease, background-color 0.2s ease;
+}
+
+.nav-toggle__bar {
+  position: relative;
+}
+
+.nav-toggle__bar::before,
+.nav-toggle__bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle__bar::before { top: -0.4rem; }
+.nav-toggle__bar::after  { top: 0.4rem; }
+
+/* hamburger -> X */
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar {
+  background: transparent;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.navbar-collapse {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-rows: 0fr;
+  visibility: hidden;                 /* closed menu can't be tabbed into */
+  background-color: var(--background);
+  transition: grid-template-rows 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.navbar.is-open .navbar-collapse {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  border-bottom: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  transition: grid-template-rows 0.3s ease, visibility 0s;
+}
+
+.navbar-menu {
+  min-height: 0;                      /* lets the row collapse to zero */
+  max-height: calc(100dvh - var(--nav-h));
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;                   /* long menu scrolls instead of running off screen */
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  list-style: none;
+}
+
+.menu-item {
+  position: relative;
+}
+
+/* every link is a full-width, 48px-tall tap target */
+.menu-item > a {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-height: 3rem;
+  padding: 0.5rem var(--nav-gutter);
+}
+
+.menu-item > a:hover,
+.menu-item > a:focus-visible {
+  background-color: var(--muted);
+  color: var(--muted-foreground);
+}
+
+/* ---------- Submenu (mobile: inline, collapsible) ---------- */
+.has-submenu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.has-submenu > a {
+  padding-right: 0.5rem;
+}
+
+.submenu-toggle {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  margin-right: var(--nav-gutter);
+  color: var(--foreground);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.submenu-toggle svg {
+  transition: transform 0.25s ease;
+}
+
+.has-submenu.is-open .submenu-toggle svg {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  display: none;
+  flex-basis: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: var(--muted);
+}
+
+.has-submenu.is-open > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu .menu-item > a {
+  padding-left: calc(var(--nav-gutter) + 1rem);   /* indent under "Projects" */
+}
+
+.dropdown-menu .menu-item > a:hover,
+.dropdown-menu .menu-item > a:focus-visible {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+/* ---------- Theme toggle ---------- */
+.theme-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 3rem;
+  padding: 0.5rem var(--nav-gutter);
+  cursor: pointer;
+}
+
+/* hidden visually but still focusable, so keyboard users can reach it */
+.theme-switch input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.theme-switch input:focus-visible + .theme-icon {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+  border-radius: 50%;
+}
+
+.theme-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--foreground);
+}
+
+.theme-icon .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.icon-moon,
+.theme-switch input:checked + .theme-icon .icon-sun {
+  display: none;
+}
+
+.theme-switch input:checked + .theme-icon .icon-moon {
+  display: block;
+}
+
+/* ---------- Desktop: 48em (768px) and up ---------- */
+@media (min-width: 48em) {
+  .nav-toggle,
+  .submenu-toggle {
+    display: none;
+  }
+
+  .navbar-collapse {
+    position: static;
+    display: block;
+    visibility: visible;
+    background: none;
+    transition: none;
+  }
+
+  .navbar.is-open .navbar-collapse {
+    border-bottom: 0;
+    box-shadow: none;
+  }
+
+  .navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .menu-item > a {
+    min-height: 2.5rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: calc(var(--radius) * 0.75);
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .has-submenu > a {
+    gap: 0.4rem;
+    padding-right: 0.9rem;
+  }
+
+  .has-submenu > a::after {
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-top: -0.2rem;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    rotate: 45deg;
+  }
+
+  /* dropdown: opens on hover or keyboard focus */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    display: block;
+    width: 15rem;
+    padding: 0.25rem;
+    color: var(--popover-foreground);
+    background-color: var(--popover);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    visibility: hidden;
+    opacity: 0;
+    translate: 0 -0.25rem;
+    transition: opacity 0.15s ease, translate 0.15s ease, visibility 0s linear 0.15s;
+  }
+
+  .has-submenu:hover > .dropdown-menu,
+  .has-submenu:focus-within > .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    translate: 0;
+    transition-delay: 0s;
+  }
+
+  .dropdown-menu .menu-item > a {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .menu-item--theme {
+    margin-left: 0.5rem;
+  }
+
+  .theme-switch {
+    justify-content: center;
+    width: 2.5rem;
+    min-height: 2.5rem;
+    padding: 0;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+  }
+
+  .theme-switch:hover {
+    background-color: var(--muted);
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar *,
+  .navbar *::before,
+  .navbar *::after {
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+  }
+}
+
+/* SVG Spacers */
+.menuSpacer {
+  fill: var(--background);
+}
+
+.footerSpacer {
+  fill: var(--background);
+}
+
+/* Footer */
+.site-footer {
+  background: var(--background);
+  color: var(--foreground);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
+
+  border-left-color: var(--border);
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-right-color: var(--border);
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-top-color: var(--border);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom-color: var(--border);
+  border-bottom-style: solid;
+  border-bottom-width: 0px;
+}
+
+.site-footer a {
+  color: var(--foreground);
+  text-decoration: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.site-footer a:hover {
+  color: var(--primary);
+  transition: all ease 0.3s;
+}
+
+/* Small screens */
+@media only screen and (max-width: 768px) {
+  .site-footer {
+    flex-direction: column;
+  }
+
+  .site-footer-mid {
+    padding-top: 1rem;
+  }
+
+  .site-footer-right {
+    padding-top: 1rem;
+  }
+}

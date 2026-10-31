@@ -2,86 +2,115 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Biography, Projects, Resume" />
-    <meta name="author" content="Joseph Fitzgerald" />
-    <meta name="image" property="og:image" content="assest/svg/JF_logo.svg" />
-    <link rel="icon" type="image/svg" href="assets/svg/JF_logo.svg">
-    <link rel="stylesheet" href="assets/css/index.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph (Facebook, LinkedIn, iMessage, Slack, WhatsApp) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joe-fitzgerald.com/">
+    <meta property="og:title" content="Joseph Fitzgerald's">
+    <meta property="og:description" content="Personal Website to display coding projects.">
+    <meta property="og:image" content="./assets/img/og-logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Joseph Fitzgerald's Logo">
+
+    <!-- X / Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Joseph Fitzgerald's Personal Website">
+    <meta name="twitter:description" content="Personal Website to display coding projects.">
+    <meta name="twitter:image" content="./assets/img/og-logo.png">
+
+    <!-- Browser tab icon (your SVG works here) -->
+    <link rel="icon" type="image/svg" href="./assets/svg/JF-logo.svg">
+
+    <!-- <link rel="stylesheet" href="./assets/css/index.css" /> -->
+    <link rel="stylesheet" href="./assets/css/site.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Roboto&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script defer src="assets/js/index.js"></script>
+    <script defer src="./assets/js/index.js"></script>
+
     <title>Joseph Fitzgerald's Personal Website</title>
+    <meta name="description" content="Personal Website to display coding projects.">
 </head>
 
 <body>
     <!-- START Main Navigation -->
-    <nav class="navbar">
+     <nav class="navbar" aria-label="Main">
         <!-- Site Logo -->
-        <img style="width: 50px; height: 50px; border-radius: 50%" class="logo" src="assets/svg/JF_logo.svg"
-            alt="Site logo" />
-        <!-- Menu Toggle for smaller screens -->
-        <input id="menu-toggle" class="menu-toggle" type="checkbox" style="display: none" />
-        <label for="menu-toggle" class="menu-toggle">
-            <span class="hamburger">
-                <span class="icon-bar top-bar"></span>
-                <span class="icon-bar middle-bar"></span>
-                <span class="icon-bar bottom-bar"></span>
-            </span>
-        </label>
-        <!-- Main Menu-->
-        <ul class="navbar-menu">
-            <li class="menu-item"><a href="index.html">Home</a></li>
-            <li class="menu-item"><a href="index.html#about-section">About</a></li>
-            <li class="menu-item">
-                <a href="index.html#projects-section">Projects<span class="dropdown-caret"></span></a>
-                <!-- Submenu -->
-                <ul class="dropdown-menu">
-                    <li class="menu-item"><a href="#">Electronic Drum Sticks</a></li>
-                    <li class="menu-item"><a href="#">Personal Website</a></li>
-                    <li class="menu-item"><a href="#">UDP Client Server</a></li>
-                    <li class="menu-item"><a href="#">Brick Breaker</a></li>
-                    <li class="menu-item"><a href="#">Spotify Song Data Visualizer</a></li>
-                    <li class="menu-item"><a href="#">C++ Projects</a></li>
-                    <li class="menu-item"><a href="#">Java Projects</a></li>
-                    <li class="menu-item"><a href="#">Rust Projects</a></li>
-                </ul>
-            </li>
-            <li class="menu-item"><a href="./pages/tools.html">Tools</a></li>
-            <!-- <li class="menu-item"><a href="#resume-section">Resume</a></li> -->
-            <!-- Theme Toggle -->
-            <li class="menu-item" style="padding-top: 5px; padding-left:1rem;">
-                <label class="theme-switch" aria-label="Toggle theme">
-                    <input type="checkbox" id="theme-toggle">
-                    <span class="theme-icon">
-                        <svg class="icon icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
-                            <circle cx="12" cy="12" r="4"></circle>
-                            <path d="M12 2v2"></path>
-                            <path d="M12 20v2"></path>
-                            <path d="m4.93 4.93 1.41 1.41"></path>
-                            <path d="m17.66 17.66 1.41 1.41"></path>
-                            <path d="M2 12h2"></path>
-                            <path d="M20 12h2"></path>
-                            <path d="m6.34 17.66-1.41 1.41"></path>
-                            <path d="m19.07 4.93-1.41 1.41"></path>
+        <a class="logo-link" href="index.html" aria-label="Joseph Fitzgerald - Home">
+            <img class="logo" src="./assets/svg/JF-logo.svg" alt="" width="50" height="50" />
+        </a>
+
+        <!-- Menu toggle (small screens only) -->
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu"
+            aria-label="Open menu">
+            <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+
+        <!-- Main menu -->
+        <div class="navbar-collapse" id="primary-menu">
+            <ul class="navbar-menu">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="index.html#about-section">About</a></li>
+                <li class="menu-item has-submenu">
+                    <a href="index.html#projects-section">Projects</a>
+                    <!-- Small screens: this button opens/closes the submenu -->
+                    <button class="submenu-toggle" type="button" aria-expanded="false" aria-controls="projects-menu"
+                        aria-label="Show project links">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
-                        <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            aria-hidden="true">
-                            <path
-                                d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401">
-                            </path>
-                        </svg>
-                    </span>
-                </label>
-            </li>
-        </ul>
+                    </button>
+                    <ul class="dropdown-menu" id="projects-menu">
+                        <li class="menu-item"><a href="#">Electronic Drum Sticks</a></li>
+                        <li class="menu-item"><a href="#">Personal Website</a></li>
+                        <li class="menu-item"><a href="#">UDP Client Server</a></li>
+                        <li class="menu-item"><a href="#">Brick Breaker</a></li>
+                        <li class="menu-item"><a href="#">Spotify Song Data Visualizer</a></li>
+                        <li class="menu-item"><a href="#">C++ Projects</a></li>
+                        <li class="menu-item"><a href="#">Java Projects</a></li>
+                        <li class="menu-item"><a href="#">Rust Projects</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="./pages/tools.html">Tools</a></li>
+                <!-- <li class="menu-item"><a href="#resume-section">Resume</a></li> -->
+
+                <!-- Theme toggle -->
+                <li class="menu-item menu-item--theme">
+                    <label class="theme-switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="theme-icon">
+                            <svg class="icon icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <path d="M12 2v2"></path>
+                                <path d="M12 20v2"></path>
+                                <path d="m4.93 4.93 1.41 1.41"></path>
+                                <path d="m17.66 17.66 1.41 1.41"></path>
+                                <path d="M2 12h2"></path>
+                                <path d="M20 12h2"></path>
+                                <path d="m6.34 17.66-1.41 1.41"></path>
+                                <path d="m19.07 4.93-1.41 1.41"></path>
+                            </svg>
+                            <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401">
+                                </path>
+                            </svg>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- END Main Navigation -->
     <!-- START Main Content -->
@@ -106,7 +135,7 @@
                 <p>
                     Welcome to my personal portfolio, my name is Joseph Fitzgerald. I am
                     a Software Engineer passionate about using technology to solve
-                    real-world problems. I currently work as an Application Developer at
+                    real-world problems. I currently work as an Specialist Software Engineer at
                     The Metropolitan Transportation Authority in the State of New York.
                     I am an engineering professional with a Bachelor's degree focused in
                     Computer Engineering from Syracuse University. As an engineer, I am
@@ -328,7 +357,7 @@
             <a href="https://www.linkedin.com/in/joseph-e-fitzgerald" class="fa fa-linkedin fa-2x"></a>
         </div>
         <div class="site-footer-right">
-            <small>&copy; Copyright 2026. All Rights Reserved</small>
+            <small>Copyright <span id="c_year"></span> &copy;. All Rights Reserved</small>
         </div>
     </footer>
 </body>
